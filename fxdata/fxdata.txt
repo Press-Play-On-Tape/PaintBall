@@ -1,0 +1,71 @@
+namespace Images
+
+    include "images/Images.hpp"
+
+
+
+
+
+    uint24_t Player_Rotate[] = {
+        Player_00_00,
+        Player_00_01,
+        Player_00_02,
+        Player_00_03,
+        Player_00_04,
+        Player_00_05,
+        Player_00_06,
+        Player_00_07,
+        Player_00_08,
+        Player_00_09,
+        Player_00_10,
+        Player_00_11,
+        Player_00_12,
+        Player_01_00,
+        Player_01_01,
+        Player_01_02,
+        Player_01_03,
+        Player_01_04,
+        Player_01_05,
+        Player_01_06,
+        Player_01_07,
+        Player_01_08,
+        Player_01_09,
+        Player_01_10,
+        Player_01_11,
+        Player_01_12,
+    };
+
+
+//    uint24_t Tiles[] = {
+//        Tile_00_01,
+//        Tile_00_02,
+//        Tile_00_03,
+//        Tile_00_04,
+//        Tile_00_05,
+//        Tile_00_06,
+//        Tile_00_07,
+//        Tile_00_08,
+//        Tile_01_01,
+//        Tile_01_02,
+//        Tile_01_03,
+//        Tile_01_04,
+//        Tile_01_05,
+//        Tile_01_06,
+//        Tile_01_07,
+//        Tile_01_08,
+//        Tile_02_01,
+//        Tile_02_02,
+//        Tile_02_03,
+//        Tile_02_04,
+//        Tile_02_05,
+//        Tile_02_06,
+//        Tile_02_07,
+//        Tile_02_08,
+//    };
+
+
+namespace_end
+
+savesection  // Anything below here will be stored in the save block
+
+uint16_t 0xFFFF // Save state  end marker
