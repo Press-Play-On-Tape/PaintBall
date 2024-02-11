@@ -1,7 +1,6 @@
 #pragma once
 
 #include <ArduboyFX.h>  
-#include "Level.h"
 
 #ifdef SOUNDS_SYNTHU
     struct Settings {
@@ -16,7 +15,7 @@
 struct Cookie {
 
     bool hasSavedGame;
-    Level level;
+    // Level level;
     
     #ifdef SOUNDS_SYNTHU
         Settings settings;

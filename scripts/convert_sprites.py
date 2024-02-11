@@ -134,6 +134,11 @@ convert_header(IMAGES + 'Player/Player.png',                                    
 
 convert_header(IMAGES + 'HUD.png',                                                             BASE + 'Images.hpp', 'HUD', 4)
 
+convert_header(IMAGES + 'PPOT.png',                                                            BASE + 'Images.hpp', 'PPOT', 4, 128, 64)
+convert_header(IMAGES + 'Sound_Volume.png',                                                    BASE + 'Images.hpp', 'Sound_Volume', 4, 22, 16)
+convert_header(IMAGES + 'Sound_Checkbox.png',                                                  BASE + 'Images.hpp', 'Sound_Checkbox', 4)
+convert_header(IMAGES + '/Title.png',                                                          BASE + 'Images.hpp', 'Title', 4, 128, 64, maskImage=False)
+
 # convert_header(IMAGES + '/Tiles/Tile_00_01.png',                                BASE + 'Images.hpp', 'Tile_00_01', 4)
 # convert_header(IMAGES + '/Tiles/Tile_00_02.png',                                BASE + 'Images.hpp', 'Tile_00_02', 4)
 # convert_header(IMAGES + '/Tiles/Tile_00_03.png',                                BASE + 'Images.hpp', 'Tile_00_03', 4)

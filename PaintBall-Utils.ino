@@ -63,4 +63,20 @@ void deactivateLEDs() {
 
 }
 
+void printGrid() {
 
+    DEBUG_PRINTLN("------------------");
+
+    for (uint8_t y = 0; y < Constants::MapTileHeight; y++) {
+
+        for (uint8_t x = 0; x < Constants::MapTileWidth; x++) {
+
+            DEBUG_PRINT(grid[y][x]);
+
+        }
+
+        DEBUG_PRINTLN("");
+
+    }
+
+}

@@ -3,9 +3,22 @@
 
 enum class GameState : uint8_t {
 
+    SplashScreen_Start,
+        SplashScreen_00 = SplashScreen_Start,
+        SplashScreen_01,
+        SplashScreen_02,
+        SplashScreen_03,
+    SplashScreen_End,
+
     Title_Init,
     Title_Start,
-        Title_SelectFloor_1 = Title_Start,
+        Title_OptPlay = Title_Start,
+        Title_OptSound,
+        Title_OptCredits,
+        Title_ShowCredits,
+        Title_OptSound_Music,
+        Title_OptSound_SFX,
+        Title_OptSound_Volume,
     Title_End,
 
     Play_Init,
@@ -80,7 +93,15 @@ enum class Speed : uint8_t {
     Fast,
 };
 
+
 enum class PlayerMode : uint8_t {
     Rotate,
     Moving,
+};
+
+
+enum class CellOwner : uint8_t {
+    None,
+    Player,
+    Enemy,
 };

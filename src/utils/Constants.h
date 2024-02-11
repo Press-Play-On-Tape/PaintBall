@@ -8,7 +8,7 @@
 #define DEBUG_PRINT    Serial.print
 #define DEBUG_PRINTLN  Serial.println
 
-#define DEBUG
+#define _DEBUG
 #define _DEBUG_RENDER_TILES
 #define _DEBUG_LEVEL_LOAD
 #define _DEBUG_MOVEMENTS_ROTATORS

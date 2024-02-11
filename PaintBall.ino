@@ -8,7 +8,6 @@
 #include "src/utils/Constants.h"
 #include "src/utils/Enums.h"
 #include "fxdata/fxdata.h"
-//#include "fxdata/images/Images.h"
 #include "fxdata/images/Tiles.h"
 #include "src/entities/Entities.h"
 #include "src/utils/Random.h"
@@ -39,9 +38,18 @@ decltype(a) a;
 #endif
 
 Cookie cookie;
+Player player;
+Enemy enemies[Constants::EnemyCount];
+Particle particles[Constants::ParticlesMax];
+GameState gameState = GameState::SplashScreen_Start;
+
 uint8_t frameCount = 0;
-Level &level = cookie.level;
-// bool rotorsStillTurning = false;
+uint8_t gridPosition = 0;
+uint8_t grid[Constants::MapTileHeight][Constants::MapTileWidth];
+
+bool particlesNeedRendering = false;
+uint16_t score = 0;
+uint8_t scorePerPass = 0;
 
 void setup() {
 
@@ -67,18 +75,22 @@ void loop() {
 
     #if defined(DEBUG) && defined(DEBUG_GAMESTATE)
         DEBUG_PRINT("GS: ");
-        DEBUG_PRINTLN((uint8_t)level.getGameState());
+        DEBUG_PRINTLN((uint8_t)gameState);
     #endif
 
-    switch (level.getGameState()) {
+    switch (gameState) {
 
-        // case GameState::Title_Init:
-        //     title_Init();
-        //     [[fallthrough]];
+        case GameState::SplashScreen_Start ... GameState::SplashScreen_End:
+            splashScreen(a);
+            break;
 
-        // case GameState::Title_Start ... GameState::Title_End:
-        //     title(a);
-        //     break;
+        case GameState::Title_Init:
+            title_Init();
+            [[fallthrough]];
+
+        case GameState::Title_Start ... GameState::Title_End:
+            title(a);
+            break;
 
         case GameState::Play_Init:
             play_Init();
@@ -91,3 +103,4 @@ void loop() {
     }
 
 }
+
