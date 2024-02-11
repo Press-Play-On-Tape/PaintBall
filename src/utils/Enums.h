@@ -23,7 +23,8 @@ enum class GameState : uint8_t {
 
     Play_Init,
     Play_Start,
-        Play,
+        Play = Play_Start,
+        Play_EndOfGame,
     Play_End,
 
 };
@@ -97,6 +98,7 @@ enum class Speed : uint8_t {
 enum class PlayerMode : uint8_t {
     Rotate,
     Moving,
+    Dead,
 };
 
 
@@ -104,4 +106,5 @@ enum class CellOwner : uint8_t {
     None,
     Player,
     Enemy,
+    Explode,
 };

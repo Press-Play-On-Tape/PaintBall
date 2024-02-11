@@ -19,9 +19,9 @@
 
 #include "src/utils/SpritesU.hpp"
 
-#ifndef DEBUG
-ARDUBOY_NO_USB
-#endif
+// #ifndef DEBUG
+// ARDUBOY_NO_USB
+// #endif
 
 extern ArduboyGBase_Config<ABG_Mode::L4_Triplane> a;
 decltype(a) a;
@@ -50,6 +50,10 @@ uint8_t grid[Constants::MapTileHeight][Constants::MapTileWidth];
 bool particlesNeedRendering = false;
 uint16_t score = 0;
 uint8_t scorePerPass = 0;
+uint8_t launchEnemyCounter_Max = 255;
+uint8_t launchEnemyCounter = 255;
+uint8_t hudCounter = 0;
+uint8_t gameOverCounter = 0;
 
 void setup() {
 

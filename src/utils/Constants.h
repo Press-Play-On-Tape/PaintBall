@@ -30,14 +30,14 @@ namespace Constants {
 
     constexpr uint8_t MapTileWidth = 18;
     constexpr uint8_t MapTileHeight = 10;
-    constexpr uint8_t EnemyCount = 6;
+    constexpr uint8_t EnemyCount = 10;
     constexpr uint8_t EnemyWidth = 4;
     constexpr int16_t Player_XMin = 0;
     constexpr int16_t Player_XMax = 1592;
     constexpr int16_t Player_YMin = 8;
     constexpr int16_t Player_YMax = 900;
     constexpr int16_t Player_Offset = 144;
-    constexpr uint8_t Player_Width_Full = 4;
+    constexpr uint8_t Player_Width_Full = 6;
     constexpr uint8_t Player_Width = 2;
     constexpr uint8_t ParticlesMax = 30;
 
@@ -50,6 +50,8 @@ namespace Constants {
 
     constexpr uint8_t Enemy_Movement_X[13] = { 2, 3, 4, 5, 6, 7, 8, 7, 6, 5, 4, 3, 2 };
     constexpr int8_t Enemy_Movement_Y[13] = { -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 };
+    constexpr uint8_t Enemy_AltDirection[13] = { 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+
 
 
 };
