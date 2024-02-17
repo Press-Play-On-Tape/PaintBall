@@ -44,12 +44,10 @@ class Player {
 
             this->playerMode = PlayerMode::Moving;
 
-
             this->playerMovement = static_cast<PlayerMovement>(this->direction + (this->y <= 8 ? 13 : 0));
 
             if (static_cast<int16_t>(this->y) >= static_cast<int16_t>(Constants::Player_YMax - Constants::Player_Offset)) {
                 this->y = this->y + Constants::Player_Offset;
-
             }
 
         }

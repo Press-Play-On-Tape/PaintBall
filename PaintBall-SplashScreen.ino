@@ -6,11 +6,12 @@
 //
 void splashScreen_Update() { 
 
-    frameCount++;    
+    frameCount++; 
+    if (hudCounter < 32) hudCounter++;   
 
     uint8_t justPressed = getJustPressedButtons();
 
-    if (justPressed > 0) {
+    if (justPressed > 0 && hudCounter == 32) {
         
         gameState = GameState::Title_Init; 
 

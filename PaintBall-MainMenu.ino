@@ -18,7 +18,6 @@ void title_Update() {
 
     uint8_t justPressed = getJustPressedButtons();
     uint8_t pressed = getPressedButtons();
-    // uint8_t activePlayer = level.getActivePlayer();
 
     switch (gameState) {
 
@@ -86,18 +85,13 @@ void title_Update() {
                 
                 if (justPressed & A_BUTTON) {
 
-                    #ifdef SOUNDS_SYNTHU
-
-                        // level.getSoundSettings().setMusic(!level.getSoundSettings().getMusic());
-
-                        // if (level.getSoundSettings().getMusic()) {
-                        //     playMusic();
-                        // }
-                        // else {
-                        //     SynthU::stop();
-                        // }
-
-                    #endif
+                    soundSettings.setMusic(!soundSettings.getMusic());
+                    if (soundSettings.getMusic()) {
+                        playMusic();
+                    }
+                    else {
+                        SynthU::stop();
+                    }
 
                 }
                 
@@ -119,11 +113,7 @@ void title_Update() {
                 
                 if (justPressed & A_BUTTON) {
 
-                    #ifdef SOUNDS_SYNTHU
-
-                        // level.getSoundSettings().setSFX(!level.getSoundSettings().getSFX());
-
-                    #endif
+                    soundSettings.setSFX(!soundSettings.getSFX());
 
                 }
                 
@@ -151,43 +141,30 @@ void title_Update() {
                 
                 if (justPressed & LEFT_BUTTON) {
 
-                    #ifdef SOUNDS_SYNTHU
+                    if (soundSettings.getVolume() > 0) {
 
-                        // if (level.getSoundSettings().getVolume() > 0) {
+                        soundSettings.setVolume(soundSettings.getVolume() - 1);
+                        SynthU::setVolume(soundSettings.getVolume());
 
-                        //     level.getSoundSettings().setVolume(level.getSoundSettings().getVolume() - 1);
-
-                        //     #ifdef SOUNDS_SYNTHU
-                        //         SynthU::setVolume(level.getSoundSettings().getVolume());
-                        //     #endif
-
-                        // }
-
-                    #endif
+                    }
 
                 }
                 
                 if (justPressed & RIGHT_BUTTON) {
 
-                    #ifdef SOUNDS_SYNTHU
+                    if (soundSettings.getVolume() < 7) {
 
-                    //     if (level.getSoundSettings().getVolume() < 7) {
+                        soundSettings.setVolume(soundSettings.getVolume() + 1);
+                        SynthU::setVolume(soundSettings.getVolume());
 
-                    //         level.getSoundSettings().setVolume(level.getSoundSettings().getVolume() + 1);
-
-                    //         #ifdef SOUNDS_SYNTHU
-                    //             SynthU::setVolume(level.getSoundSettings().getVolume());
-                    //         #endif
-
-                    //     }
-
-                    #endif
+                    }
 
                 }
 
                 if (justPressed & B_BUTTON) {
 
                     gameState = GameState::Title_OptSound;
+                    saveCookie(true);
 
                 }
                 
@@ -216,49 +193,29 @@ void title(ArduboyGBase_Config<ABG_Mode::L4_Triplane> &a) {
 
     SpritesU::drawOverwriteFX(0, 0, Images::Title, (3 * idx) + currentPlane);
 
+
     switch (gameState) {
         
-        case GameState::Title_OptPlay ... GameState::Title_OptSound_Volume:
-        // case GameState::Title_SelectSkill_3_1 ... GameState::Title_SelectSkill_2_2:
-        // case GameState::Title_FloorsComplete ... GameState::Title_FloorsComplete2:
-            break;
+        case GameState::Title_OptSound_Music ... GameState::Title_OptSound_Volume:
+            {
 
-        // case GameState::Title_SelectFloor_1 ... GameState::Title_SelectFloor_10:
-        //     {
-        //         uint8_t levelTickStart = Constants::Level_Tick_Start[idx];
+                if (soundSettings.getMusic())    SpritesU::drawPlusMaskFX(25, 40, Images::Sound_Checkbox, currentPlane);
+                if (soundSettings.getSFX())      SpritesU::drawPlusMaskFX(25, 49, Images::Sound_Checkbox, currentPlane);
 
-        //         for (uint8_t i = 0; i < 4; i++) {
+                uint8_t volume = (soundSettings.getMusic() || soundSettings.getSFX()) ? soundSettings.getVolume() : 0;
 
-        //             if (level.getLevelComplete((static_cast<uint8_t>(level.getSkillLevel()) * 10) + levelTickStart + i)) {
+                if (soundSettings.getMusic() || soundSettings.getSFX()) {
+                    SpritesU::drawOverwriteFX(84, 39, Images::Sound_Volume, (soundSettings.getVolume() * 3) + currentPlane);
+                }
+                else {
+                    SpritesU::drawOverwriteFX(84, 39, Images::Sound_Volume, currentPlane);
+                }
 
-        //                 SpritesU::drawPlusMaskFX(94, 30 + (i * 7), Images::Tick, currentPlane);
+            }
+            break;        
 
-        //             }
-
-        //         }
-
-        //     }
-
-        //     break;
-
-
-        // case GameState::Title_OptSound_Music ... GameState::Title_OptSound_Volume:
-        //     {
-
-        //         if (level.getSoundSettings().getMusic())    SpritesU::drawPlusMaskFX(25, 40, Images::Sound_Checkbox, currentPlane);
-        //         if (level.getSoundSettings().getSFX())      SpritesU::drawPlusMaskFX(25, 49, Images::Sound_Checkbox, currentPlane);
-
-        //         uint8_t volume = (level.getSoundSettings().getMusic() || level.getSoundSettings().getSFX()) ? level.getSoundSettings().getVolume() : 0;
-
-        //         if (level.getSoundSettings().getMusic() || level.getSoundSettings().getSFX()) {
-        //             SpritesU::drawOverwriteFX(84, 39, Images::Sound_Volume, (level.getSoundSettings().getVolume() * 3) + currentPlane);
-        //         }
-        //         else {
-        //             SpritesU::drawOverwriteFX(84, 39, Images::Sound_Volume, currentPlane);
-        //         }
-
-        //     }
-        //     break;            
+        default:
+            break;    
 
     }
 

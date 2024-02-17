@@ -97,7 +97,7 @@ struct Particle {
 
         }
 
-        bool render() {
+        bool isActive() {
 
             return (this->counter > 0);
 

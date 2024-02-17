@@ -1,7 +1,5 @@
 #pragma once
 
-#ifdef SOUNDS_SYNTHU
-
 #ifndef SYNTHU_UPDATE_EVERY_N_FRAMES
 #define SYNTHU_UPDATE_EVERY_N_FRAMES 1
 #endif
@@ -553,7 +551,5 @@ ISR(TIMER3_COMPA_vect)
     TC4H  = 0;
     OCR4A = tc;
 }
-
-#endif
 
 #endif

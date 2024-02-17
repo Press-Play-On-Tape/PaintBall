@@ -33,11 +33,11 @@ void updateAndRenderParticles(uint8_t frameCount) {
             
         particlesNeedRendering = false;
 
-        for ( int i = 0; i < Constants::ParticlesMax; i++) {
+        for (int i = 0; i < Constants::ParticlesMax; i++) {
 
-            if (update) particles[i].update();
+            if (particles[i].isActive() ) { 
 
-            if ( particles[i].render() ) { // the dot should be rendered
+                if (update) particles[i].update();
 
                 uint8_t pSize = particles[i].getSize();
                 particlesNeedRendering = true;
@@ -56,3 +56,4 @@ void updateAndRenderParticles(uint8_t frameCount) {
     }
 
 }
+

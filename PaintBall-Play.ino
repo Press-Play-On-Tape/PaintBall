@@ -16,6 +16,20 @@ void play_Init() {
 
     }
 
+    for (Score &score : scores) {
+
+        score.setActive(false);
+        score.setX(0);
+        score.setY(0);
+
+    }
+
+    for (Particle &particle : particles) {
+
+        particle.setCounter(0);
+
+    }
+
     launchEnemyCounter = 1;
     launchEnemyCounter_Max = 255;
 
@@ -27,9 +41,10 @@ void play_Init() {
     player.setPlayerMode(PlayerMode::Rotate);
 
     gameState = GameState::Play;
-    score = 0;
+    cookie.score = 0;
     scorePerPass = 0;
     gameOverCounter = 0;
+    hudCounter = 0;
 
 }
 
@@ -101,9 +116,23 @@ void render(uint8_t currentPlane) {
 
         if (enemy.isActive()) {
 
-            SpritesU::drawPlusMask(enemy.getX_Screen(), enemy.getY_Screen(), Images::Enemy, currentPlane);
+            if (enemy.getX() < 1568) {
+
+                SpritesU::drawPlusMask(enemy.getX_Screen(), enemy.getY_Screen(), Images::Enemy, currentPlane);
+
+            }
+            else {
+
+                if (player.getPlayerMode() != PlayerMode::Dead || (player.getPlayerMode() == PlayerMode::Dead && frameCount % 24 < 12)) {
+
+                    SpritesU::drawPlusMask(enemy.getX_Screen(), enemy.getY_Screen(), Images::Enemy, currentPlane);
+
+                }
+
+            }
 
         }
+
     }
 
 
@@ -142,26 +171,40 @@ void render(uint8_t currentPlane) {
     }
 
 
-    // Render particles ..
+    switch (gameState) {
 
-    updateAndRenderParticles(frameCount);
+        case GameState::Play:
+        case GameState::Play_EndOfGame:
+            break;
+
+        case GameState::Play_Quit:
+            SpritesU::drawPlusMaskFX(14, 10, Images::Quit, currentPlane);
+            break;
+
+    }
+
 
     SpritesU::drawOverwriteFX(128- 25, 0, Images::HUD, ((hudCounter / 3) * 3) + currentPlane);
 
+    uint16_t score = cookie.score / 10000;
+    SpritesU::drawOverwriteFX(128 - 22, 10, Images::Numbers_5x3_1D_WB, (score * 3) + currentPlane);
+    score = (cookie.score - (score * 10000)) / 100;
+    SpritesU::drawOverwriteFX(128 - 18, 10, Images::Numbers_5x3_2D_WB, (score * 3) + currentPlane);
+    score = cookie.score % 100;
+    SpritesU::drawOverwriteFX(128 - 10, 10, Images::Numbers_5x3_2D_WB, (score * 3) + currentPlane);
 
-    uint16_t score1 = score / 10000;
-    SpritesU::drawOverwriteFX(128 - 22, 10, Images::Numbers_5x3_1D_WB, (score1 * 3) + currentPlane);
-    score1 = (score - (score1 * 10000)) / 100;
-    SpritesU::drawOverwriteFX(128 - 18, 10, Images::Numbers_5x3_2D_WB, (score1 * 3) + currentPlane);
-    score1 = score % 100;
-    SpritesU::drawOverwriteFX(128 - 10, 10, Images::Numbers_5x3_2D_WB, (score1 * 3) + currentPlane);
+    score = cookie.highScore / 10000;
+    SpritesU::drawOverwriteFX(128 - 22, 28, Images::Numbers_5x3_1D_WB, (score * 3) + currentPlane);
+    score = (cookie.highScore - (score * 10000)) / 100;
+    SpritesU::drawOverwriteFX(128 - 18, 28, Images::Numbers_5x3_2D_WB, (score * 3) + currentPlane);
+    score = cookie.highScore % 100;
+    SpritesU::drawOverwriteFX(128 - 10, 28, Images::Numbers_5x3_2D_WB, (score * 3) + currentPlane);
 
-    score1 = score / 10000;
-    SpritesU::drawOverwriteFX(128 - 22, 28, Images::Numbers_5x3_1D_WB, (score1 * 3) + currentPlane);
-    score1 = (score - (score1 * 10000)) / 100;
-    SpritesU::drawOverwriteFX(128 - 18, 28, Images::Numbers_5x3_2D_WB, (score1 * 3) + currentPlane);
-    score1 = score % 100;
-    SpritesU::drawOverwriteFX(128 - 10, 28, Images::Numbers_5x3_2D_WB, (score1 * 3) + currentPlane);
+
+    // Render particles and scores ..
+
+    updateAndRenderParticles(frameCount);
+    updateAndRenderScores(frameCount, currentPlane);
 
 }
 
@@ -190,10 +233,26 @@ void play_Update() {
 
             }
 
-            incGridPosition(frameCount);
+            incGridPosition(frameCount, cookie.score);
             updatePlayer(frameCount);
             updateEnemies(frameCount);
             launchEnemy();
+
+            if (justPressed & B_BUTTON) { 
+                gameState = GameState::Play_Quit;
+            }
+
+            break;
+
+        case GameState::Play_Quit:
+
+            if (justPressed & A_BUTTON) { 
+                gameState = GameState::Title_Init;
+            }
+
+            if (justPressed & B_BUTTON) { 
+                gameState = GameState::Play;
+            }
 
             break;
 
@@ -216,7 +275,7 @@ void play(ArduboyGBase_Config<ABG_Mode::L4_Triplane> &a) {
 
     uint8_t currentPlane = a.currentPlane();
     render(currentPlane);
-    
+
 }
 
 
@@ -234,9 +293,21 @@ void initMap() {
 
 }
 
-void incGridPosition(uint8_t frameCount) {
 
-    if (frameCount % 24 == 0) {
+void incGridPosition(uint8_t frameCount, uint16_t score) {
+
+    // How fast?
+
+    uint8_t speed = 10;
+
+    // Speed is between  24 .. 10
+    if (cookie.score < 10500) {
+
+        speed = 24 - (cookie.score / 750);
+
+    }
+
+    if (frameCount % speed == 0) {
 
         gridPosition++;
 
@@ -270,6 +341,15 @@ void incGridPosition(uint8_t frameCount) {
             if (enemy.isActive()) {
                 enemy.setX(enemy.getX() + 16);
             }
+
+        }
+
+
+        // If the grid has moved then move the player ..
+
+        if (player.getX() < 1568) {
+
+            player.setX(player.getX() + 16);
 
         }
 
@@ -320,9 +400,16 @@ void updateEnemies(uint8_t frameCount) {
 
             if (endOfGame) {
 
+                if (player.getPlayerMode() != PlayerMode::Dead) {
+
+                    saveCookie(true);
+
+                }
+
                 launchParticles(player.getX_Screen() - gridPosition + 4, player.getY_Screen() + 4);
                 player.setPlayerMode(PlayerMode::Dead);
                 gameState = GameState::Play_EndOfGame;
+                playSFX(MusicSFX::SFX_Death);
 
             }   
             else {
@@ -331,39 +418,39 @@ void updateEnemies(uint8_t frameCount) {
                         
                     if (gridPosition == 0) {
 
-                        int8_t x = (enemy.getX_Screen() - gridPosition) / 6;
-                        int8_t y = (enemy.getY_Screen() - 1) / 6;
+                        int8_t x = (enemy.getX_Screen() - gridPosition) / Constants::CellWidth;
+                        int8_t y = (enemy.getY_Screen() - 1) / Constants::CellHeight;
                         setGrid(x + 1, y, CellOwner::Enemy);
 
-                        x = (enemy.getX_Screen() - gridPosition + Constants::EnemyWidth) / 6;
-                        y = (enemy.getY_Screen() - 1) / 6;
+                        x = (enemy.getX_Screen() - gridPosition + Constants::EnemyWidth) / Constants::CellWidth;
+                        y = (enemy.getY_Screen() - 1) / Constants::CellHeight;
                         setGrid(x + 1, y, CellOwner::Enemy);
 
-                        x = (enemy.getX_Screen() - gridPosition) / 6;
-                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / 6;
+                        x = (enemy.getX_Screen() - gridPosition) / Constants::CellWidth;
+                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / Constants::CellHeight;
                         setGrid(x + 1, y, CellOwner::Enemy);
 
-                        x = (enemy.getX_Screen() - gridPosition + Constants::EnemyWidth) / 6;
-                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / 6;
+                        x = (enemy.getX_Screen() - gridPosition + Constants::EnemyWidth) / Constants::CellWidth;
+                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / Constants::CellHeight;
                         setGrid(x + 1, y, CellOwner::Enemy);
 
                     }
                     else {
 
-                        int8_t x = (enemy.getX_Screen() - gridPosition + 6) / 6;
-                        int8_t y = (enemy.getY_Screen() - 1) / 6;
+                        int8_t x = (enemy.getX_Screen() - gridPosition + 6) / Constants::CellWidth;
+                        int8_t y = (enemy.getY_Screen() - 1) / Constants::CellHeight;
                         setGrid(x, y, CellOwner::Enemy);
 
-                        x = (enemy.getX_Screen() - gridPosition + 6 + Constants::EnemyWidth) / 6;
-                        y = (enemy.getY_Screen() - 1) / 6;
+                        x = (enemy.getX_Screen() - gridPosition + 6 + Constants::EnemyWidth) / Constants::CellWidth;
+                        y = (enemy.getY_Screen() - 1) / Constants::CellHeight;
                         setGrid(x, y, CellOwner::Enemy);
 
-                        x = (enemy.getX_Screen() - gridPosition + 6) / 6;
-                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / 6;
+                        x = (enemy.getX_Screen() - gridPosition + 6) / Constants::CellWidth;
+                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / Constants::CellHeight;
                         setGrid(x, y, CellOwner::Enemy);
 
-                        x = (enemy.getX_Screen() - gridPosition + 6 + Constants::EnemyWidth) / 6;
-                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / 6;
+                        x = (enemy.getX_Screen() - gridPosition + 6 + Constants::EnemyWidth) / Constants::CellWidth;
+                        y = (enemy.getY_Screen() - 1 + Constants::EnemyWidth) / Constants::CellHeight;
                         setGrid(x, y, CellOwner::Enemy);
 
                     }
@@ -377,8 +464,6 @@ void updateEnemies(uint8_t frameCount) {
     }
     
 }
-
-
 
 
 void setGrid(int8_t x, int8_t y, CellOwner owner) {
@@ -399,22 +484,8 @@ void setGrid(int8_t x, int8_t y, CellOwner owner) {
             if (grid[y][x] == static_cast<uint8_t>(CellOwner::Enemy)) {
 
                 scorePerPass++;
-
-           
-// Serial.print(x);
-// Serial.print(",");
-// Serial.print(y);
-// Serial.print(" - ");
-// Serial.print(grid[y][x]);
-// Serial.print(" - ");
-
-                score = score + scorePerPass;
+                cookie.score = cookie.score + scorePerPass;
                 grid[y][x] = static_cast<uint8_t>(CellOwner::Explode);
-// Serial.print(grid[y][x]);
-// Serial.print(" - ");
-// Serial.println(scorePerPass);   
-// printGrid();             
-
 
             }
             else if (grid[y][x] > static_cast<uint8_t>(CellOwner::Enemy)) {

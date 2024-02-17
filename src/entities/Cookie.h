@@ -2,23 +2,18 @@
 
 #include <ArduboyFX.h>  
 
-#ifdef SOUNDS_SYNTHU
-    struct Settings {
+struct Settings {
 
-        uint8_t music;
-        uint8_t sfx;
+    uint8_t music;
+    uint8_t sfx;
 
-    };
-#endif
-
+};
 
 struct Cookie {
 
     bool hasSavedGame;
-    // Level level;
-    
-    #ifdef SOUNDS_SYNTHU
-        Settings settings;
-    #endif
+    SoundSettings soundSettings;
+    uint16_t score = 0;
+    uint16_t highScore = 0;
 
 };

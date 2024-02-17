@@ -142,6 +142,8 @@ convert_header(IMAGES + '/Title.png',                                           
 convert_header(IMAGES + 'Numbers/Numbers_5x3_1D_WB.png',                                       BASE + 'Images.hpp', 'Numbers_5x3_1D_WB', 4, 3, 8)
 convert_header(IMAGES + 'Numbers/Numbers_5x3_2D_WB.png',                                       BASE + 'Images.hpp', 'Numbers_5x3_2D_WB', 4, 7, 8)
 convert_header(IMAGES + 'GameOver.png',                                                        BASE + 'Images.hpp', 'GameOver', 4)
+convert_header(IMAGES + 'Plus8.png',                                                           BASE + 'Images.hpp', 'Plus8', 4, 23, 8)
+convert_header(IMAGES + 'Quit.png',                                                            BASE + 'Images.hpp', 'Quit', 4)
 
 
 

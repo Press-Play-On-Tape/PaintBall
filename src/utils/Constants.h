@@ -2,9 +2,6 @@
 #include "../../fxdata/fxdata.h"
 #include "../../fxdata/images/Tiles.h"
 
-#define _SOUNDS_SYNTHU
-#define START_LEVEL 0
-
 #define DEBUG_PRINT    Serial.print
 #define DEBUG_PRINTLN  Serial.println
 
@@ -15,6 +12,18 @@
 #define _DEBUG_CAN_ROTATOR
 #define _DEBUG_IS_WALKABLE
 #define _DEBUG_ITEM_BITMAP
+
+namespace Music {
+
+    constexpr uint24_t Songs[] = { Music::Song_MainTheme };
+
+    constexpr uint24_t SFXs[] =  { Music::SFX_Death, 
+                                   Music::SFX_Victory,
+                                   Music::SFX_XPGain,
+                                   Music::SFX_Three_Inc,
+                                   Music::SFX_Three_Dec  };
+
+}
 
 struct Point_U8 {
     uint8_t x;
@@ -28,6 +37,8 @@ struct Point_S8 {
 
 namespace Constants {
 
+    constexpr uint8_t CellWidth = 6;
+    constexpr uint8_t CellHeight = 6;
     constexpr uint8_t MapTileWidth = 18;
     constexpr uint8_t MapTileHeight = 10;
     constexpr uint8_t EnemyCount = 10;
@@ -37,9 +48,11 @@ namespace Constants {
     constexpr int16_t Player_YMin = 8;
     constexpr int16_t Player_YMax = 900;
     constexpr int16_t Player_Offset = 144;
-    constexpr uint8_t Player_Width_Full = 6;
-    constexpr uint8_t Player_Width = 2;
+    constexpr uint8_t Player_Width_Full = 5;
+    constexpr uint8_t Player_Width = 3;
     constexpr uint8_t ParticlesMax = 30;
+    constexpr uint8_t ScoreCount = 5;
+    constexpr uint8_t ScoreFade = 24;
 
 
     constexpr uint8_t PlayerOffset_X[13] = { -11, -9, -6, -4, -1, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -52,6 +65,8 @@ namespace Constants {
     constexpr int8_t Enemy_Movement_Y[13] = { -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 };
     constexpr uint8_t Enemy_AltDirection[13] = { 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 
+    constexpr int8_t Score_Movement_X[26] = { -18, -15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15, 18, -18, -15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15, 18 };
+    constexpr int8_t Score_Movement_Y[26] = { -18, -21, -24, -27, -30, -33, -36, -33, -30, -27, -24, -21, -18, 18, 21, 24, 27, 30, 33, 36, 33, 30, 27, 24, 21, 18 };
 
 
 };

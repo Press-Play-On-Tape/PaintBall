@@ -1,5 +1,16 @@
 #pragma once
 
+enum class MusicSong : uint8_t {
+    MainTheme
+};
+
+enum class MusicSFX : uint8_t {
+    SFX_Death,
+    SFX_Victory,
+    SFX_XPGain,
+    SFX_Three_Inc,
+    SFX_Three_Dec,
+};
 
 enum class GameState : uint8_t {
 
@@ -25,6 +36,7 @@ enum class GameState : uint8_t {
     Play_Start,
         Play = Play_Start,
         Play_EndOfGame,
+        Play_Quit,
     Play_End,
 
 };

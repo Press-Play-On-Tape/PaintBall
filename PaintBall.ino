@@ -19,27 +19,22 @@
 
 #include "src/utils/SpritesU.hpp"
 
-// #ifndef DEBUG
-// ARDUBOY_NO_USB
-// #endif
-
 extern ArduboyGBase_Config<ABG_Mode::L4_Triplane> a;
 decltype(a) a;
 
-
-#ifdef SOUNDS_SYNTHU
-    #define SYNTHU_IMPLEMENTATION
-    #define SYNTHU_NUM_CHANNELS 4
-    #define SYNTHU_UPDATE_EVERY_N_FRAMES 3
-    #define SYNTHU_ENABLE_SFX 1
-    #define SYNTHU_FX_READDATABYTES_FUNC FX::readDataBytes
-    #include "src/utils/SynthU.hpp"
-    #define ABG_TIMER1
-#endif
+#define SYNTHU_IMPLEMENTATION
+#define SYNTHU_NUM_CHANNELS 4
+#define SYNTHU_UPDATE_EVERY_N_FRAMES 3
+#define SYNTHU_ENABLE_SFX 1
+#define SYNTHU_FX_READDATABYTES_FUNC FX::readDataBytes
+#include "src/utils/SynthU.hpp"
+#define ABG_TIMER1
 
 Cookie cookie;
+SoundSettings &soundSettings = cookie.soundSettings;
 Player player;
 Enemy enemies[Constants::EnemyCount];
+Score scores[Constants::ScoreCount];
 Particle particles[Constants::ParticlesMax];
 GameState gameState = GameState::SplashScreen_Start;
 
@@ -48,12 +43,15 @@ uint8_t gridPosition = 0;
 uint8_t grid[Constants::MapTileHeight][Constants::MapTileWidth];
 
 bool particlesNeedRendering = false;
-uint16_t score = 0;
+bool scoresNeedRendering = false;
+
 uint8_t scorePerPass = 0;
 uint8_t launchEnemyCounter_Max = 255;
 uint8_t launchEnemyCounter = 255;
 uint8_t hudCounter = 0;
 uint8_t gameOverCounter = 0;
+uint8_t scoreMax = 0;
+
 
 void setup() {
 
@@ -64,23 +62,17 @@ void setup() {
     FX::begin(FX_DATA_PAGE, FX_SAVE_PAGE);
     FX::loadGameState((uint8_t*)&cookie, sizeof(cookie));
 
-    #ifdef SOUNDS_SYNTHU
-        audioInit();
-        setAudioOn();
-    #endif
+    audioInit();
+    setAudioOn();
 
 }
+
 
 void loop() {
 
     FX::enableOLED();
     a.waitForNextPlane(BLACK);
     FX::disableOLED();
-
-    #if defined(DEBUG) && defined(DEBUG_GAMESTATE)
-        DEBUG_PRINT("GS: ");
-        DEBUG_PRINTLN((uint8_t)gameState);
-    #endif
 
     switch (gameState) {
 
@@ -105,6 +97,14 @@ void loop() {
             break;
 
     }
+
+    if (cookie.score > cookie.highScore) {
+
+        cookie.highScore = cookie.score;
+
+    }
+
+    audioUpdate();
 
 }
 
