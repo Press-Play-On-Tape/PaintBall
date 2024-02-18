@@ -50,7 +50,7 @@ namespace Constants {
     constexpr int16_t Player_Offset = 144;
     constexpr uint8_t Player_Width_Full = 5;
     constexpr uint8_t Player_Width = 3;
-    constexpr uint8_t ParticlesMax = 30;
+    constexpr uint8_t ParticlesMax = 25;
     constexpr uint8_t ScoreCount = 5;
     constexpr uint8_t ScoreFade = 24;
 
@@ -64,9 +64,6 @@ namespace Constants {
     constexpr uint8_t Enemy_Movement_X[13] = { 2, 3, 4, 5, 6, 7, 8, 7, 6, 5, 4, 3, 2 };
     constexpr int8_t  Enemy_Movement_Y[13] = { -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 };
     constexpr uint8_t Enemy_AltDirection[13] = { 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
-
-    constexpr int8_t  Score_Movement_X[26] = { -18, -15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15, 18, -18, -15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15, 18 };
-    constexpr int8_t  Score_Movement_Y[26] = { -18, -21, -24, -27, -30, -33, -36, -33, -30, -27, -24, -21, -18, 18, 21, 24, 27, 30, 33, 36, 33, 30, 27, 24, 21, 18 };
 
     constexpr uint8_t Bubble_Count = 4;
     constexpr uint8_t Bubble_Movement[3] = { 2, 3, 4 };

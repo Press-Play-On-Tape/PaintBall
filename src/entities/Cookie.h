@@ -2,13 +2,6 @@
 
 #include <ArduboyFX.h>  
 
-struct Settings {
-
-    uint8_t music;
-    uint8_t sfx;
-
-};
-
 struct Cookie {
 
     bool hasSavedGame;

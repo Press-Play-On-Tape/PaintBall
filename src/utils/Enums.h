@@ -74,7 +74,6 @@ enum class Movement : uint8_t {
     Down_02_06,
 };
 
-
 enum class PlayerMovement : uint8_t {
     Up_Left_12_12,
     Up_Left_10_14,
@@ -105,20 +104,17 @@ enum class PlayerMovement : uint8_t {
 
 };
 
-
 enum class Speed : uint8_t {
     Slow,
     Medium,
     Fast,
 };
 
-
 enum class PlayerMode : uint8_t {
     Rotate,
     Moving,
     Dead,
 };
-
 
 enum class CellOwner : uint8_t {
     None,

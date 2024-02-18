@@ -6,8 +6,8 @@ using uint24_t = __uint24;
 
 // Initialize FX hardware using  FX::begin(FX_DATA_PAGE); in the setup() function.
 
-constexpr uint16_t FX_DATA_PAGE  = 0xfe47;
-constexpr uint24_t FX_DATA_BYTES = 108613;
+constexpr uint16_t FX_DATA_PAGE  = 0xfe3a;
+constexpr uint24_t FX_DATA_BYTES = 111928;
 
 constexpr uint16_t FX_SAVE_PAGE  = 0xfff0;
 constexpr uint24_t FX_SAVE_BYTES = 2;
@@ -15,55 +15,55 @@ constexpr uint24_t FX_SAVE_BYTES = 2;
 namespace Music
 {
   constexpr uint24_t Song_MainTheme = 0x000000;
-  constexpr uint24_t SFX_Three_Inc = 0x00529F;
-  constexpr uint24_t SFX_Three_Dec = 0x0052BB;
-  constexpr uint24_t SFX_Death = 0x0052D7;
-  constexpr uint24_t SFX_Victory = 0x00538B;
-  constexpr uint24_t SFX_XPGain = 0x00543F;
+  constexpr uint24_t SFX_Three_Inc = 0x005F92;
+  constexpr uint24_t SFX_Three_Dec = 0x005FAE;
+  constexpr uint24_t SFX_Death = 0x005FCA;
+  constexpr uint24_t SFX_Victory = 0x00607E;
+  constexpr uint24_t SFX_XPGain = 0x006132;
 }
 
 namespace Images
 {
-  constexpr uint24_t Player_01_00 = 0x005453;
-  constexpr uint24_t Player_01_01 = 0x005515;
-  constexpr uint24_t Player_01_02 = 0x0055BF;
-  constexpr uint24_t Player_01_03 = 0x005645;
-  constexpr uint24_t Player_01_04 = 0x0056B3;
-  constexpr uint24_t Player_01_05 = 0x0056FD;
-  constexpr uint24_t Player_01_06 = 0x00573B;
-  constexpr uint24_t Player_01_07 = 0x005779;
-  constexpr uint24_t Player_01_08 = 0x0057B7;
-  constexpr uint24_t Player_01_09 = 0x005801;
-  constexpr uint24_t Player_01_10 = 0x00586F;
-  constexpr uint24_t Player_01_11 = 0x0058F5;
-  constexpr uint24_t Player_01_12 = 0x00599F;
-  constexpr uint24_t Player_00_00 = 0x005A61;
-  constexpr uint24_t Player_00_01 = 0x005B23;
-  constexpr uint24_t Player_00_02 = 0x005BCD;
-  constexpr uint24_t Player_00_03 = 0x005C53;
-  constexpr uint24_t Player_00_04 = 0x005CC1;
-  constexpr uint24_t Player_00_05 = 0x005D0B;
-  constexpr uint24_t Player_00_06 = 0x005D49;
-  constexpr uint24_t Player_00_07 = 0x005D87;
-  constexpr uint24_t Player_00_08 = 0x005DC5;
-  constexpr uint24_t Player_00_09 = 0x005E0F;
-  constexpr uint24_t Player_00_10 = 0x005E7D;
-  constexpr uint24_t Player_00_11 = 0x005F03;
-  constexpr uint24_t Player_00_12 = 0x005FAD;
-  constexpr uint24_t Player = 0x00606F;
-  constexpr uint24_t HUD = 0x00608F;
-  constexpr uint24_t PPOT = 0x008F71;
-  constexpr uint24_t Sound_Volume = 0x00BF73;
-  constexpr uint24_t Sound_Checkbox = 0x00C7B5;
-  constexpr uint24_t Title = 0x00C7C3;
-  constexpr uint24_t Numbers_5x3_1D_WB = 0x0187C5;
-  constexpr uint24_t Numbers_5x3_2D_WB = 0x018821;
-  constexpr uint24_t GameOver = 0x019057;
-  constexpr uint24_t Plus8 = 0x019725;
-  constexpr uint24_t Quit = 0x01A1EF;
-  constexpr uint24_t Bubble_00 = 0x01A671;
-  constexpr uint24_t Bubble_01 = 0x01A6A3;
-  constexpr uint24_t Bubble_02 = 0x01A735;
-  constexpr uint24_t Player_Rotate = 0x01A7F7;
+  constexpr uint24_t Player_01_00 = 0x006146;
+  constexpr uint24_t Player_01_01 = 0x006208;
+  constexpr uint24_t Player_01_02 = 0x0062B2;
+  constexpr uint24_t Player_01_03 = 0x006338;
+  constexpr uint24_t Player_01_04 = 0x0063A6;
+  constexpr uint24_t Player_01_05 = 0x0063F0;
+  constexpr uint24_t Player_01_06 = 0x00642E;
+  constexpr uint24_t Player_01_07 = 0x00646C;
+  constexpr uint24_t Player_01_08 = 0x0064AA;
+  constexpr uint24_t Player_01_09 = 0x0064F4;
+  constexpr uint24_t Player_01_10 = 0x006562;
+  constexpr uint24_t Player_01_11 = 0x0065E8;
+  constexpr uint24_t Player_01_12 = 0x006692;
+  constexpr uint24_t Player_00_00 = 0x006754;
+  constexpr uint24_t Player_00_01 = 0x006816;
+  constexpr uint24_t Player_00_02 = 0x0068C0;
+  constexpr uint24_t Player_00_03 = 0x006946;
+  constexpr uint24_t Player_00_04 = 0x0069B4;
+  constexpr uint24_t Player_00_05 = 0x0069FE;
+  constexpr uint24_t Player_00_06 = 0x006A3C;
+  constexpr uint24_t Player_00_07 = 0x006A7A;
+  constexpr uint24_t Player_00_08 = 0x006AB8;
+  constexpr uint24_t Player_00_09 = 0x006B02;
+  constexpr uint24_t Player_00_10 = 0x006B70;
+  constexpr uint24_t Player_00_11 = 0x006BF6;
+  constexpr uint24_t Player_00_12 = 0x006CA0;
+  constexpr uint24_t Player = 0x006D62;
+  constexpr uint24_t HUD = 0x006D82;
+  constexpr uint24_t PPOT = 0x009C64;
+  constexpr uint24_t Sound_Volume = 0x00CC66;
+  constexpr uint24_t Sound_Checkbox = 0x00D4A8;
+  constexpr uint24_t Title = 0x00D4B6;
+  constexpr uint24_t Numbers_5x3_1D_WB = 0x0194B8;
+  constexpr uint24_t Numbers_5x3_2D_WB = 0x019514;
+  constexpr uint24_t GameOver = 0x019D4A;
+  constexpr uint24_t Plus8 = 0x01A418;
+  constexpr uint24_t Quit = 0x01AEE2;
+  constexpr uint24_t Bubble_00 = 0x01B364;
+  constexpr uint24_t Bubble_01 = 0x01B396;
+  constexpr uint24_t Bubble_02 = 0x01B428;
+  constexpr uint24_t Player_Rotate = 0x01B4EA;
 }
 
