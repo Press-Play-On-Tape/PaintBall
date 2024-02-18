@@ -6,7 +6,7 @@
       "filename": "PaintBall.hex",
       "flashdata": "PaintBall-data.bin",
       "flashsave": "PaintBall-save.bin",
-      "device": "ArduboyFX"
+      "device": "ArduboyMini"
     }
   ]
 }
