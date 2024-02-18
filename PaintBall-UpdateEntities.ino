@@ -207,8 +207,6 @@ bool updateEnemy(Enemy &enemy, uint8_t frameCount) {
 
 void updateAndRenderScores(uint8_t frameCount, uint8_t currentPlane) {
 
-    //bool update = (frameCount % 3) == 0;
-
     if (scoresNeedRendering) {
             
         scoresNeedRendering = false;

@@ -41,6 +41,7 @@ GameState gameState = GameState::SplashScreen_Start;
 uint8_t frameCount = 0;
 uint8_t gridPosition = 0;
 uint8_t grid[Constants::MapTileHeight][Constants::MapTileWidth];
+Bubble bubbles[Constants::Bubble_Count];
 
 bool particlesNeedRendering = false;
 bool scoresNeedRendering = false;
@@ -64,6 +65,30 @@ void setup() {
 
     audioInit();
     setAudioOn();
+
+    bubbles[0].setSize(Size::Large);
+    bubbles[0].setX(12 * 16);
+    bubbles[0].setY(12 * 16);
+    bubbles[0].setDirection(Direction::NorthEast);
+    bubbles[0].setSpeed(Speed::Slow);
+
+    bubbles[1].setSize(Size::Small);
+    bubbles[1].setX(24 * 16);
+    bubbles[1].setY(17 * 16);
+    bubbles[1].setDirection(Direction::NorthWest);
+    bubbles[1].setSpeed(Speed::Medium);
+
+    bubbles[2].setSize(Size::Small);
+    bubbles[2].setX(89 * 16);
+    bubbles[2].setY(37 * 16);
+    bubbles[2].setDirection(Direction::SouthEast);
+    bubbles[2].setSpeed(Speed::Fast);
+
+    bubbles[3].setSize(Size::Medium);
+    bubbles[3].setX(12 * 16);
+    bubbles[3].setY(37 * 16);
+    bubbles[3].setDirection(Direction::SouthWest);
+    bubbles[3].setSpeed(Speed::Fast);
 
 }
 

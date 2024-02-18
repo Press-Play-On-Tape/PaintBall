@@ -191,7 +191,31 @@ void title(ArduboyGBase_Config<ABG_Mode::L4_Triplane> &a) {
     uint8_t currentPlane = a.currentPlane();
     uint8_t idx = static_cast<uint8_t>(gameState) - static_cast<uint8_t>(GameState::Title_Start);
 
-    SpritesU::drawOverwriteFX(0, 0, Images::Title, (3 * idx) + currentPlane);
+
+    for (uint8_t i = 0; i < Constants::Bubble_Count; i++) {
+
+        switch (bubbles[i].getSize()) {
+
+            case Size::Small:
+                SpritesU::drawPlusMaskFX(bubbles[i].getX_Screen(), bubbles[i].getY_Screen(), Images::Bubble_00, currentPlane);
+                break;
+
+            case Size::Medium:
+                SpritesU::drawPlusMaskFX(bubbles[i].getX_Screen(), bubbles[i].getY_Screen(), Images::Bubble_01, currentPlane);
+                break;
+
+            case Size::Large:
+                SpritesU::drawPlusMaskFX(bubbles[i].getX_Screen(), bubbles[i].getY_Screen(), Images::Bubble_02, currentPlane);
+                break;
+
+        }
+
+        bubbles[i].update();
+
+    }
+
+
+    SpritesU::drawPlusMaskFX(0, 0, Images::Title, (3 * idx) + currentPlane);
 
 
     switch (gameState) {
@@ -199,16 +223,16 @@ void title(ArduboyGBase_Config<ABG_Mode::L4_Triplane> &a) {
         case GameState::Title_OptSound_Music ... GameState::Title_OptSound_Volume:
             {
 
-                if (soundSettings.getMusic())    SpritesU::drawPlusMaskFX(25, 40, Images::Sound_Checkbox, currentPlane);
-                if (soundSettings.getSFX())      SpritesU::drawPlusMaskFX(25, 49, Images::Sound_Checkbox, currentPlane);
+                if (soundSettings.getMusic())    SpritesU::drawPlusMaskFX(25, 44, Images::Sound_Checkbox, currentPlane);
+                if (soundSettings.getSFX())      SpritesU::drawPlusMaskFX(25, 53, Images::Sound_Checkbox, currentPlane);
 
                 uint8_t volume = (soundSettings.getMusic() || soundSettings.getSFX()) ? soundSettings.getVolume() : 0;
 
                 if (soundSettings.getMusic() || soundSettings.getSFX()) {
-                    SpritesU::drawOverwriteFX(84, 39, Images::Sound_Volume, (soundSettings.getVolume() * 3) + currentPlane);
+                    SpritesU::drawPlusMaskFX(84, 42, Images::Sound_Volume, (soundSettings.getVolume() * 3) + currentPlane);
                 }
                 else {
-                    SpritesU::drawOverwriteFX(84, 39, Images::Sound_Volume, currentPlane);
+                    SpritesU::drawPlusMaskFX(84, 42, Images::Sound_Volume, currentPlane);
                 }
 
             }
@@ -218,5 +242,6 @@ void title(ArduboyGBase_Config<ABG_Mode::L4_Triplane> &a) {
             break;    
 
     }
+
 
 }

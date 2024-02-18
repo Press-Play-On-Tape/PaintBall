@@ -8,8 +8,6 @@ class Score {
 
     private:
 
-        // Direction direction = Direction::East;
-
         uint8_t score = 1;
         PlayerMovement playerMovement = PlayerMovement::Up_Middle;
         int16_t x = 40;

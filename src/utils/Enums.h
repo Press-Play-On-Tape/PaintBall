@@ -52,6 +52,12 @@ enum class Direction : uint8_t {
     NorthWest,
 };
 
+enum class Size : uint8_t {
+    Small,
+    Medium,
+    Large,
+};
+
 enum class Movement : uint8_t {
     Up_02_06,    // right, up
     Up_03_05,

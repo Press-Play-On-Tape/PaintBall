@@ -8,8 +8,6 @@ class Enemy {
 
     private:
 
-        // Direction direction = Direction::East;
-
         Movement movement = Movement::Middle;
         Speed speed = Speed::Slow;
         int8_t directionMovement = 1;

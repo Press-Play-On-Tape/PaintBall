@@ -44,35 +44,6 @@ namespace Images
         Player_01_12,
     };
 
-
-//    uint24_t Tiles[] = {
-//        Tile_00_01,
-//        Tile_00_02,
-//        Tile_00_03,
-//        Tile_00_04,
-//        Tile_00_05,
-//        Tile_00_06,
-//        Tile_00_07,
-//        Tile_00_08,
-//        Tile_01_01,
-//        Tile_01_02,
-//        Tile_01_03,
-//        Tile_01_04,
-//        Tile_01_05,
-//        Tile_01_06,
-//        Tile_01_07,
-//        Tile_01_08,
-//        Tile_02_01,
-//        Tile_02_02,
-//        Tile_02_03,
-//        Tile_02_04,
-//        Tile_02_05,
-//        Tile_02_06,
-//        Tile_02_07,
-//        Tile_02_08,
-//    };
-
-
 namespace_end
 
 savesection  // Anything below here will be stored in the save block

@@ -50,6 +50,11 @@ void play_Init() {
 
 void render(uint8_t currentPlane) {
 
+    uint8_t explodeCount = 0;
+    uint8_t xCoord[4] = { 0, 0, 0, 0 };
+    uint8_t yCoord[4] = { 0, 0, 0, 0 };
+    uint8_t imageIdx[4] = { 0, 0, 0, 0 };
+
 
     // Render Map ..
 
@@ -89,11 +94,19 @@ void render(uint8_t currentPlane) {
 
                 // Exploding cell (when the player crosses an enemy cell)..
 
-                uint8_t imageIdx = (grid[y][x] - 3) / 2;
-                SpritesU::drawPlusMask(x * 6 + gridPosition - 6 - 4, (y * 6) + 1 - 4, Images::Tile_Exploding, (imageIdx * 3) + currentPlane);
+                if (explodeCount < 4) {
+
+                    xCoord[explodeCount] = x * 6 + gridPosition - 6 - 4;
+                    yCoord[explodeCount] = (y * 6) + 1 - 4;
+                    imageIdx[explodeCount] = (grid[y][x] - 3) / 2;
+                  
+                    explodeCount++;
+                
+                }
 
 
                 // Increase the cell value until it reaches the max ..
+
                 grid[y][x] = grid[y][x] + 1;
 
                 if (grid[y][x] == 2 + (7 * 2)) { 
@@ -107,6 +120,13 @@ void render(uint8_t currentPlane) {
     }
 
     SpritesU::fillRect_i8(0, 62, 128, 8, BLACK);
+
+
+    // Render exploding cells ..
+
+    for (uint8_t i = 0; i < explodeCount; i++) {
+        SpritesU::drawPlusMask(xCoord[i], yCoord[i], Images::Tile_Exploding, (imageIdx[i] * 3) + currentPlane);
+    }
 
 
 
@@ -161,7 +181,7 @@ void render(uint8_t currentPlane) {
                 gameOverCounter++;
             }
             else {
-                SpritesU::drawPlusMaskFX(14, 10, Images::GameOver, currentPlane);
+                SpritesU::drawPlusMaskFX(24, 13, Images::GameOver, currentPlane);
             }
             break;
 
@@ -178,7 +198,7 @@ void render(uint8_t currentPlane) {
             break;
 
         case GameState::Play_Quit:
-            SpritesU::drawPlusMaskFX(14, 10, Images::Quit, currentPlane);
+            SpritesU::drawPlusMaskFX(20, 22, Images::Quit, currentPlane);
             break;
 
     }
@@ -258,7 +278,7 @@ void play_Update() {
 
         default:
 
-            if (justPressed & A_BUTTON) { 
+            if (gameOverCounter == 128 && justPressed & A_BUTTON) { 
                 gameState = GameState::Title_Init;
             }
 

@@ -6,8 +6,8 @@ using uint24_t = __uint24;
 
 // Initialize FX hardware using  FX::begin(FX_DATA_PAGE); in the setup() function.
 
-constexpr uint16_t FX_DATA_PAGE  = 0xfea7;
-constexpr uint24_t FX_DATA_BYTES = 84019;
+constexpr uint16_t FX_DATA_PAGE  = 0xfe47;
+constexpr uint24_t FX_DATA_BYTES = 108613;
 
 constexpr uint16_t FX_SAVE_PAGE  = 0xfff0;
 constexpr uint24_t FX_SAVE_BYTES = 2;
@@ -54,13 +54,16 @@ namespace Images
   constexpr uint24_t HUD = 0x00608F;
   constexpr uint24_t PPOT = 0x008F71;
   constexpr uint24_t Sound_Volume = 0x00BF73;
-  constexpr uint24_t Sound_Checkbox = 0x00C395;
-  constexpr uint24_t Title = 0x00C3A3;
-  constexpr uint24_t Numbers_5x3_1D_WB = 0x0123A5;
-  constexpr uint24_t Numbers_5x3_2D_WB = 0x012401;
-  constexpr uint24_t GameOver = 0x012C37;
-  constexpr uint24_t Plus8 = 0x013779;
-  constexpr uint24_t Quit = 0x014243;
-  constexpr uint24_t Player_Rotate = 0x0147E5;
+  constexpr uint24_t Sound_Checkbox = 0x00C7B5;
+  constexpr uint24_t Title = 0x00C7C3;
+  constexpr uint24_t Numbers_5x3_1D_WB = 0x0187C5;
+  constexpr uint24_t Numbers_5x3_2D_WB = 0x018821;
+  constexpr uint24_t GameOver = 0x019057;
+  constexpr uint24_t Plus8 = 0x019725;
+  constexpr uint24_t Quit = 0x01A1EF;
+  constexpr uint24_t Bubble_00 = 0x01A671;
+  constexpr uint24_t Bubble_01 = 0x01A6A3;
+  constexpr uint24_t Bubble_02 = 0x01A735;
+  constexpr uint24_t Player_Rotate = 0x01A7F7;
 }
 

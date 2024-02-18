@@ -9,8 +9,6 @@ class Player {
 
     private:
 
-        // Direction direction = Direction::East;
-
         PlayerMode playerMode = PlayerMode::Rotate;
         PlayerMovement playerMovement = PlayerMovement::Up_Middle;
 
