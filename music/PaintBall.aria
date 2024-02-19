@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<seqview xscroll="4177.000000" yscroll="0" zoom="132">
-<sequence maintempo="135" measureAmount="41" currentTrack="0" beatResolution="120" internalName="Apollo Justice: Ace Attorney - Thrill Theme ~ Suspense" fileFormatVersion="4" channelManagement="auto" metronome="false">
+<seqview xscroll="0.000000" yscroll="0" zoom="132">
+<sequence maintempo="135" measureAmount="10" currentTrack="0" beatResolution="120" internalName="Apollo Justice: Ace Attorney - Thrill Theme ~ Suspense" fileFormatVersion="4" channelManagement="auto" metronome="false">
 
 <measure  firstMeasure="0" denom="4" num="4"/>
 
@@ -27,78 +27,101 @@
   <drumkit id="0" collapseView="false"/>
   <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
 
-  <note pitch="55" start="120" end="1560" volume="127"/>
-  <note pitch="67" start="480" end="495" volume="127"/>
+  <note pitch="48" start="0" end="4" volume="127"/>
+  <note pitch="55" start="0" end="960" volume="127"/>
+  <note pitch="67" start="0" end="15" volume="127"/>
+  <note pitch="67" start="30" end="45" volume="127"/>
+  <note pitch="67" start="60" end="75" volume="127"/>
+  <note pitch="67" start="90" end="105" volume="127"/>
+  <note pitch="60" start="120" end="135" volume="127"/>
+  <note pitch="55" start="120" end="240" volume="100"/>
+  <note pitch="48" start="120" end="124" volume="127"/>
+  <note pitch="60" start="150" end="165" volume="127"/>
+  <note pitch="60" start="180" end="195" volume="127"/>
+  <note pitch="60" start="210" end="225" volume="127"/>
+  <note pitch="48" start="240" end="244" volume="127"/>
+  <note pitch="60" start="240" end="255" volume="127"/>
+  <note pitch="60" start="270" end="285" volume="127"/>
+  <note pitch="60" start="300" end="315" volume="127"/>
+  <note pitch="60" start="330" end="345" volume="127"/>
+  <note pitch="48" start="360" end="364" volume="127"/>
+  <note pitch="59" start="360" end="375" volume="127"/>
+  <note pitch="59" start="390" end="405" volume="127"/>
+  <note pitch="59" start="420" end="435" volume="127"/>
+  <note pitch="59" start="450" end="465" volume="127"/>
   <note pitch="48" start="480" end="484" volume="127"/>
+  <note pitch="67" start="480" end="495" volume="127"/>
   <note pitch="67" start="510" end="525" volume="127"/>
   <note pitch="67" start="540" end="555" volume="127"/>
   <note pitch="67" start="570" end="585" volume="127"/>
+  <note pitch="60" start="600" end="615" volume="127"/>
   <note pitch="55" start="600" end="720" volume="100"/>
   <note pitch="48" start="600" end="604" volume="127"/>
-  <note pitch="60" start="600" end="615" volume="127"/>
   <note pitch="60" start="630" end="645" volume="127"/>
   <note pitch="60" start="660" end="675" volume="127"/>
   <note pitch="60" start="690" end="705" volume="127"/>
-  <note pitch="60" start="720" end="735" volume="127"/>
   <note pitch="48" start="720" end="724" volume="127"/>
+  <note pitch="60" start="720" end="735" volume="127"/>
   <note pitch="60" start="750" end="765" volume="127"/>
   <note pitch="60" start="780" end="795" volume="127"/>
   <note pitch="60" start="810" end="825" volume="127"/>
-  <note pitch="59" start="840" end="855" volume="127"/>
   <note pitch="48" start="840" end="844" volume="127"/>
+  <note pitch="59" start="840" end="855" volume="127"/>
   <note pitch="59" start="870" end="885" volume="127"/>
   <note pitch="59" start="900" end="915" volume="127"/>
   <note pitch="59" start="930" end="945" volume="127"/>
-  <note pitch="67" start="960" end="975" volume="127"/>
   <note pitch="48" start="960" end="964" volume="127"/>
+  <note pitch="54" start="960" end="1920" volume="127"/>
+  <note pitch="67" start="960" end="975" volume="127"/>
   <note pitch="67" start="990" end="1005" volume="127"/>
   <note pitch="67" start="1020" end="1035" volume="127"/>
   <note pitch="67" start="1050" end="1065" volume="127"/>
+  <note pitch="60" start="1080" end="1095" volume="127"/>
   <note pitch="55" start="1080" end="1200" volume="100"/>
   <note pitch="48" start="1080" end="1084" volume="127"/>
-  <note pitch="60" start="1080" end="1095" volume="127"/>
   <note pitch="60" start="1110" end="1125" volume="127"/>
   <note pitch="60" start="1140" end="1155" volume="127"/>
   <note pitch="60" start="1170" end="1185" volume="127"/>
-  <note pitch="60" start="1200" end="1215" volume="127"/>
   <note pitch="48" start="1200" end="1204" volume="127"/>
+  <note pitch="60" start="1200" end="1215" volume="127"/>
   <note pitch="60" start="1230" end="1245" volume="127"/>
   <note pitch="60" start="1260" end="1275" volume="127"/>
   <note pitch="60" start="1290" end="1305" volume="127"/>
-  <note pitch="59" start="1320" end="1335" volume="127"/>
   <note pitch="48" start="1320" end="1324" volume="127"/>
+  <note pitch="59" start="1320" end="1335" volume="127"/>
   <note pitch="59" start="1350" end="1365" volume="127"/>
   <note pitch="59" start="1380" end="1395" volume="127"/>
   <note pitch="59" start="1410" end="1425" volume="127"/>
-  <note pitch="54" start="1440" end="2400" volume="127"/>
-  <note pitch="67" start="1440" end="1455" volume="127"/>
   <note pitch="48" start="1440" end="1444" volume="127"/>
+  <note pitch="67" start="1440" end="1455" volume="127"/>
   <note pitch="67" start="1470" end="1485" volume="127"/>
   <note pitch="67" start="1500" end="1515" volume="127"/>
   <note pitch="67" start="1530" end="1545" volume="127"/>
-  <note pitch="48" start="1560" end="1564" volume="127"/>
   <note pitch="60" start="1560" end="1575" volume="127"/>
+  <note pitch="55" start="1560" end="1680" volume="100"/>
+  <note pitch="48" start="1560" end="1564" volume="127"/>
   <note pitch="60" start="1590" end="1605" volume="127"/>
   <note pitch="60" start="1620" end="1635" volume="127"/>
   <note pitch="60" start="1650" end="1665" volume="127"/>
-  <note pitch="60" start="1680" end="1695" volume="127"/>
   <note pitch="48" start="1680" end="1684" volume="127"/>
+  <note pitch="60" start="1680" end="1695" volume="127"/>
   <note pitch="60" start="1710" end="1725" volume="127"/>
   <note pitch="60" start="1740" end="1755" volume="127"/>
   <note pitch="60" start="1770" end="1785" volume="127"/>
-  <note pitch="59" start="1800" end="1815" volume="127"/>
   <note pitch="48" start="1800" end="1804" volume="127"/>
+  <note pitch="59" start="1800" end="1815" volume="127"/>
   <note pitch="59" start="1830" end="1845" volume="127"/>
   <note pitch="59" start="1860" end="1875" volume="127"/>
   <note pitch="59" start="1890" end="1905" volume="127"/>
-  <note pitch="67" start="1920" end="1935" volume="127"/>
   <note pitch="48" start="1920" end="1924" volume="127"/>
+  <note pitch="55" start="1920" end="2880" volume="127"/>
+  <note pitch="67" start="1920" end="1935" volume="127"/>
   <note pitch="67" start="1950" end="1965" volume="127"/>
   <note pitch="67" start="1980" end="1995" volume="127"/>
   <note pitch="67" start="2010" end="2025" volume="127"/>
+  <note pitch="60" start="2040" end="2055" volume="127"/>
   <note pitch="55" start="2040" end="2160" volume="100"/>
   <note pitch="48" start="2040" end="2044" volume="127"/>
-  <note pitch="60" start="2040" end="2055" volume="127"/>
   <note pitch="60" start="2070" end="2085" volume="127"/>
   <note pitch="60" start="2100" end="2115" volume="127"/>
   <note pitch="60" start="2130" end="2145" volume="127"/>
@@ -112,15 +135,14 @@
   <note pitch="59" start="2310" end="2325" volume="127"/>
   <note pitch="59" start="2340" end="2355" volume="127"/>
   <note pitch="59" start="2370" end="2385" volume="127"/>
-  <note pitch="55" start="2400" end="3360" volume="127"/>
   <note pitch="67" start="2400" end="2415" volume="127"/>
   <note pitch="48" start="2400" end="2404" volume="127"/>
   <note pitch="67" start="2430" end="2445" volume="127"/>
   <note pitch="67" start="2460" end="2475" volume="127"/>
   <note pitch="67" start="2490" end="2505" volume="127"/>
+  <note pitch="60" start="2520" end="2535" volume="127"/>
   <note pitch="55" start="2520" end="2640" volume="100"/>
   <note pitch="48" start="2520" end="2524" volume="127"/>
-  <note pitch="60" start="2520" end="2535" volume="127"/>
   <note pitch="60" start="2550" end="2565" volume="127"/>
   <note pitch="60" start="2580" end="2595" volume="127"/>
   <note pitch="60" start="2610" end="2625" volume="127"/>
@@ -134,14 +156,15 @@
   <note pitch="59" start="2790" end="2805" volume="127"/>
   <note pitch="59" start="2820" end="2835" volume="127"/>
   <note pitch="59" start="2850" end="2865" volume="127"/>
-  <note pitch="67" start="2880" end="2895" volume="127"/>
   <note pitch="48" start="2880" end="2884" volume="127"/>
+  <note pitch="54" start="2880" end="3840" volume="127"/>
+  <note pitch="67" start="2880" end="2895" volume="127"/>
   <note pitch="67" start="2910" end="2925" volume="127"/>
   <note pitch="67" start="2940" end="2955" volume="127"/>
   <note pitch="67" start="2970" end="2985" volume="127"/>
+  <note pitch="60" start="3000" end="3015" volume="127"/>
   <note pitch="55" start="3000" end="3120" volume="100"/>
   <note pitch="48" start="3000" end="3004" volume="127"/>
-  <note pitch="60" start="3000" end="3015" volume="127"/>
   <note pitch="60" start="3030" end="3045" volume="127"/>
   <note pitch="60" start="3060" end="3075" volume="127"/>
   <note pitch="60" start="3090" end="3105" volume="127"/>
@@ -155,15 +178,14 @@
   <note pitch="59" start="3270" end="3285" volume="127"/>
   <note pitch="59" start="3300" end="3315" volume="127"/>
   <note pitch="59" start="3330" end="3345" volume="127"/>
-  <note pitch="54" start="3360" end="4320" volume="127"/>
   <note pitch="67" start="3360" end="3375" volume="127"/>
   <note pitch="48" start="3360" end="3364" volume="127"/>
   <note pitch="67" start="3390" end="3405" volume="127"/>
   <note pitch="67" start="3420" end="3435" volume="127"/>
   <note pitch="67" start="3450" end="3465" volume="127"/>
+  <note pitch="60" start="3480" end="3495" volume="127"/>
   <note pitch="55" start="3480" end="3600" volume="100"/>
   <note pitch="48" start="3480" end="3484" volume="127"/>
-  <note pitch="60" start="3480" end="3495" volume="127"/>
   <note pitch="60" start="3510" end="3525" volume="127"/>
   <note pitch="60" start="3540" end="3555" volume="127"/>
   <note pitch="60" start="3570" end="3585" volume="127"/>
@@ -177,733 +199,53 @@
   <note pitch="59" start="3750" end="3765" volume="127"/>
   <note pitch="59" start="3780" end="3795" volume="127"/>
   <note pitch="59" start="3810" end="3825" volume="127"/>
-  <note pitch="67" start="3840" end="3855" volume="127"/>
   <note pitch="48" start="3840" end="3844" volume="127"/>
+  <note pitch="50" start="3840" end="4320" volume="127"/>
+  <note pitch="67" start="3840" end="3855" volume="127"/>
   <note pitch="67" start="3870" end="3885" volume="127"/>
   <note pitch="67" start="3900" end="3915" volume="127"/>
   <note pitch="67" start="3930" end="3945" volume="127"/>
+  <note pitch="60" start="3960" end="3975" volume="127"/>
   <note pitch="55" start="3960" end="4080" volume="100"/>
   <note pitch="48" start="3960" end="3964" volume="127"/>
-  <note pitch="60" start="3960" end="3975" volume="127"/>
   <note pitch="60" start="3990" end="4005" volume="127"/>
   <note pitch="60" start="4020" end="4035" volume="127"/>
   <note pitch="60" start="4050" end="4065" volume="127"/>
-  <note pitch="60" start="4080" end="4095" volume="127"/>
+  <note pitch="59" start="4080" end="4095" volume="127"/>
   <note pitch="48" start="4080" end="4084" volume="127"/>
-  <note pitch="60" start="4110" end="4125" volume="127"/>
-  <note pitch="60" start="4140" end="4155" volume="127"/>
-  <note pitch="60" start="4170" end="4185" volume="127"/>
-  <note pitch="59" start="4200" end="4215" volume="127"/>
+  <note pitch="59" start="4110" end="4125" volume="127"/>
+  <note pitch="59" start="4140" end="4155" volume="127"/>
+  <note pitch="59" start="4170" end="4185" volume="127"/>
+  <note pitch="55" start="4200" end="4215" volume="127"/>
   <note pitch="48" start="4200" end="4204" volume="127"/>
-  <note pitch="59" start="4230" end="4245" volume="127"/>
-  <note pitch="59" start="4260" end="4275" volume="127"/>
-  <note pitch="59" start="4290" end="4305" volume="127"/>
-  <note pitch="50" start="4320" end="4800" volume="127"/>
-  <note pitch="67" start="4320" end="4335" volume="127"/>
+  <note pitch="55" start="4230" end="4245" volume="127"/>
+  <note pitch="55" start="4260" end="4275" volume="127"/>
+  <note pitch="55" start="4290" end="4305" volume="127"/>
   <note pitch="48" start="4320" end="4324" volume="127"/>
-  <note pitch="67" start="4350" end="4365" volume="127"/>
-  <note pitch="67" start="4380" end="4395" volume="127"/>
-  <note pitch="67" start="4410" end="4425" volume="127"/>
+  <note pitch="48" start="4320" end="4800" volume="127"/>
+  <note pitch="66" start="4320" end="4335" volume="127"/>
+  <note pitch="66" start="4350" end="4365" volume="127"/>
+  <note pitch="66" start="4380" end="4395" volume="127"/>
+  <note pitch="66" start="4410" end="4425" volume="127"/>
+  <note pitch="59" start="4440" end="4455" volume="127"/>
   <note pitch="55" start="4440" end="4560" volume="100"/>
   <note pitch="48" start="4440" end="4444" volume="127"/>
-  <note pitch="60" start="4440" end="4455" volume="127"/>
-  <note pitch="60" start="4470" end="4485" volume="127"/>
-  <note pitch="60" start="4500" end="4515" volume="127"/>
-  <note pitch="60" start="4530" end="4545" volume="127"/>
-  <note pitch="59" start="4560" end="4575" volume="127"/>
+  <note pitch="59" start="4470" end="4485" volume="127"/>
+  <note pitch="59" start="4500" end="4515" volume="127"/>
+  <note pitch="59" start="4530" end="4545" volume="127"/>
+  <note pitch="55" start="4560" end="4575" volume="127"/>
   <note pitch="48" start="4560" end="4564" volume="127"/>
-  <note pitch="59" start="4590" end="4605" volume="127"/>
-  <note pitch="59" start="4620" end="4635" volume="127"/>
-  <note pitch="59" start="4650" end="4665" volume="127"/>
-  <note pitch="55" start="4680" end="4695" volume="127"/>
+  <note pitch="55" start="4590" end="4605" volume="127"/>
+  <note pitch="55" start="4620" end="4635" volume="127"/>
+  <note pitch="55" start="4650" end="4665" volume="127"/>
+  <note pitch="54" start="4680" end="4695" volume="127"/>
   <note pitch="48" start="4680" end="4684" volume="127"/>
-  <note pitch="55" start="4710" end="4725" volume="127"/>
-  <note pitch="55" start="4740" end="4755" volume="127"/>
-  <note pitch="55" start="4770" end="4785" volume="127"/>
-  <note pitch="48" start="4800" end="5280" volume="127"/>
-  <note pitch="66" start="4800" end="4815" volume="127"/>
-  <note pitch="48" start="4800" end="4804" volume="127"/>
-  <note pitch="66" start="4830" end="4845" volume="127"/>
-  <note pitch="66" start="4860" end="4875" volume="127"/>
-  <note pitch="66" start="4890" end="4905" volume="127"/>
-  <note pitch="55" start="4920" end="5040" volume="100"/>
-  <note pitch="48" start="4920" end="4924" volume="127"/>
-  <note pitch="59" start="4920" end="4935" volume="127"/>
-  <note pitch="59" start="4950" end="4965" volume="127"/>
-  <note pitch="59" start="4980" end="4995" volume="127"/>
-  <note pitch="59" start="5010" end="5025" volume="127"/>
-  <note pitch="55" start="5040" end="5055" volume="127"/>
-  <note pitch="48" start="5040" end="5044" volume="127"/>
-  <note pitch="55" start="5070" end="5085" volume="127"/>
-  <note pitch="55" start="5100" end="5115" volume="127"/>
-  <note pitch="55" start="5130" end="5145" volume="127"/>
-  <note pitch="54" start="5160" end="5175" volume="127"/>
-  <note pitch="48" start="5160" end="5164" volume="127"/>
-  <note pitch="54" start="5190" end="5205" volume="127"/>
-  <note pitch="54" start="5220" end="5235" volume="127"/>
-  <note pitch="54" start="5250" end="5265" volume="127"/>
-  <note pitch="55" start="5280" end="6240" volume="127"/>
-  <note pitch="67" start="5280" end="5295" volume="127"/>
-  <note pitch="48" start="5280" end="5284" volume="127"/>
-  <note pitch="67" start="5310" end="5325" volume="127"/>
-  <note pitch="67" start="5340" end="5355" volume="127"/>
-  <note pitch="67" start="5370" end="5385" volume="127"/>
-  <note pitch="55" start="5400" end="5520" volume="100"/>
-  <note pitch="48" start="5400" end="5404" volume="127"/>
-  <note pitch="60" start="5400" end="5415" volume="127"/>
-  <note pitch="60" start="5430" end="5445" volume="127"/>
-  <note pitch="60" start="5460" end="5475" volume="127"/>
-  <note pitch="60" start="5490" end="5505" volume="127"/>
-  <note pitch="60" start="5520" end="5535" volume="127"/>
-  <note pitch="48" start="5520" end="5524" volume="127"/>
-  <note pitch="60" start="5550" end="5565" volume="127"/>
-  <note pitch="60" start="5580" end="5595" volume="127"/>
-  <note pitch="60" start="5610" end="5625" volume="127"/>
-  <note pitch="59" start="5640" end="5655" volume="127"/>
-  <note pitch="48" start="5640" end="5644" volume="127"/>
-  <note pitch="59" start="5670" end="5685" volume="127"/>
-  <note pitch="59" start="5700" end="5715" volume="127"/>
-  <note pitch="59" start="5730" end="5745" volume="127"/>
-  <note pitch="67" start="5760" end="5775" volume="127"/>
-  <note pitch="48" start="5760" end="5764" volume="127"/>
-  <note pitch="67" start="5790" end="5805" volume="127"/>
-  <note pitch="67" start="5820" end="5835" volume="127"/>
-  <note pitch="67" start="5850" end="5865" volume="127"/>
-  <note pitch="55" start="5880" end="6000" volume="100"/>
-  <note pitch="48" start="5880" end="5884" volume="127"/>
-  <note pitch="60" start="5880" end="5895" volume="127"/>
-  <note pitch="60" start="5910" end="5925" volume="127"/>
-  <note pitch="60" start="5940" end="5955" volume="127"/>
-  <note pitch="60" start="5970" end="5985" volume="127"/>
-  <note pitch="60" start="6000" end="6015" volume="127"/>
-  <note pitch="48" start="6000" end="6004" volume="127"/>
-  <note pitch="60" start="6030" end="6045" volume="127"/>
-  <note pitch="60" start="6060" end="6075" volume="127"/>
-  <note pitch="60" start="6090" end="6105" volume="127"/>
-  <note pitch="59" start="6120" end="6135" volume="127"/>
-  <note pitch="48" start="6120" end="6124" volume="127"/>
-  <note pitch="59" start="6150" end="6165" volume="127"/>
-  <note pitch="59" start="6180" end="6195" volume="127"/>
-  <note pitch="59" start="6210" end="6225" volume="127"/>
-  <note pitch="54" start="6240" end="7200" volume="127"/>
-  <note pitch="67" start="6240" end="6255" volume="127"/>
-  <note pitch="48" start="6240" end="6244" volume="127"/>
-  <note pitch="67" start="6270" end="6285" volume="127"/>
-  <note pitch="67" start="6300" end="6315" volume="127"/>
-  <note pitch="67" start="6330" end="6345" volume="127"/>
-  <note pitch="55" start="6360" end="6480" volume="100"/>
-  <note pitch="48" start="6360" end="6364" volume="127"/>
-  <note pitch="60" start="6360" end="6375" volume="127"/>
-  <note pitch="60" start="6390" end="6405" volume="127"/>
-  <note pitch="60" start="6420" end="6435" volume="127"/>
-  <note pitch="60" start="6450" end="6465" volume="127"/>
-  <note pitch="60" start="6480" end="6495" volume="127"/>
-  <note pitch="48" start="6480" end="6484" volume="127"/>
-  <note pitch="60" start="6510" end="6525" volume="127"/>
-  <note pitch="60" start="6540" end="6555" volume="127"/>
-  <note pitch="60" start="6570" end="6585" volume="127"/>
-  <note pitch="59" start="6600" end="6615" volume="127"/>
-  <note pitch="48" start="6600" end="6604" volume="127"/>
-  <note pitch="59" start="6630" end="6645" volume="127"/>
-  <note pitch="59" start="6660" end="6675" volume="127"/>
-  <note pitch="59" start="6690" end="6705" volume="127"/>
-  <note pitch="67" start="6720" end="6735" volume="127"/>
-  <note pitch="48" start="6720" end="6724" volume="127"/>
-  <note pitch="67" start="6750" end="6765" volume="127"/>
-  <note pitch="67" start="6780" end="6795" volume="127"/>
-  <note pitch="67" start="6810" end="6825" volume="127"/>
-  <note pitch="55" start="6840" end="6960" volume="100"/>
-  <note pitch="48" start="6840" end="6844" volume="127"/>
-  <note pitch="60" start="6840" end="6855" volume="127"/>
-  <note pitch="60" start="6870" end="6885" volume="127"/>
-  <note pitch="60" start="6900" end="6915" volume="127"/>
-  <note pitch="60" start="6930" end="6945" volume="127"/>
-  <note pitch="60" start="6960" end="6975" volume="127"/>
-  <note pitch="48" start="6960" end="6964" volume="127"/>
-  <note pitch="60" start="6990" end="7005" volume="127"/>
-  <note pitch="60" start="7020" end="7035" volume="127"/>
-  <note pitch="60" start="7050" end="7065" volume="127"/>
-  <note pitch="59" start="7080" end="7095" volume="127"/>
-  <note pitch="48" start="7080" end="7084" volume="127"/>
-  <note pitch="59" start="7110" end="7125" volume="127"/>
-  <note pitch="59" start="7140" end="7155" volume="127"/>
-  <note pitch="59" start="7170" end="7185" volume="127"/>
-  <note pitch="55" start="7200" end="8160" volume="127"/>
-  <note pitch="67" start="7200" end="7215" volume="127"/>
-  <note pitch="48" start="7200" end="7204" volume="127"/>
-  <note pitch="67" start="7230" end="7245" volume="127"/>
-  <note pitch="67" start="7260" end="7275" volume="127"/>
-  <note pitch="67" start="7290" end="7305" volume="127"/>
-  <note pitch="55" start="7320" end="7440" volume="100"/>
-  <note pitch="48" start="7320" end="7324" volume="127"/>
-  <note pitch="60" start="7320" end="7335" volume="127"/>
-  <note pitch="60" start="7350" end="7365" volume="127"/>
-  <note pitch="60" start="7380" end="7395" volume="127"/>
-  <note pitch="60" start="7410" end="7425" volume="127"/>
-  <note pitch="48" start="7440" end="7444" volume="127"/>
-  <note pitch="60" start="7440" end="7455" volume="127"/>
-  <note pitch="60" start="7470" end="7485" volume="127"/>
-  <note pitch="60" start="7500" end="7515" volume="127"/>
-  <note pitch="60" start="7530" end="7545" volume="127"/>
-  <note pitch="48" start="7560" end="7564" volume="127"/>
-  <note pitch="59" start="7560" end="7575" volume="127"/>
-  <note pitch="59" start="7590" end="7605" volume="127"/>
-  <note pitch="59" start="7620" end="7635" volume="127"/>
-  <note pitch="59" start="7650" end="7665" volume="127"/>
-  <note pitch="48" start="7680" end="7684" volume="127"/>
-  <note pitch="67" start="7680" end="7695" volume="127"/>
-  <note pitch="67" start="7710" end="7725" volume="127"/>
-  <note pitch="67" start="7740" end="7755" volume="127"/>
-  <note pitch="67" start="7770" end="7785" volume="127"/>
-  <note pitch="55" start="7800" end="7920" volume="100"/>
-  <note pitch="48" start="7800" end="7804" volume="127"/>
-  <note pitch="60" start="7800" end="7815" volume="127"/>
-  <note pitch="60" start="7830" end="7845" volume="127"/>
-  <note pitch="60" start="7860" end="7875" volume="127"/>
-  <note pitch="60" start="7890" end="7905" volume="127"/>
-  <note pitch="48" start="7920" end="7924" volume="127"/>
-  <note pitch="60" start="7920" end="7935" volume="127"/>
-  <note pitch="60" start="7950" end="7965" volume="127"/>
-  <note pitch="60" start="7980" end="7995" volume="127"/>
-  <note pitch="60" start="8010" end="8025" volume="127"/>
-  <note pitch="48" start="8040" end="8044" volume="127"/>
-  <note pitch="59" start="8040" end="8055" volume="127"/>
-  <note pitch="59" start="8070" end="8085" volume="127"/>
-  <note pitch="59" start="8100" end="8115" volume="127"/>
-  <note pitch="59" start="8130" end="8145" volume="127"/>
-  <note pitch="54" start="8160" end="9120" volume="127"/>
-  <note pitch="67" start="8160" end="8175" volume="127"/>
-  <note pitch="48" start="8160" end="8164" volume="127"/>
-  <note pitch="67" start="8190" end="8205" volume="127"/>
-  <note pitch="67" start="8220" end="8235" volume="127"/>
-  <note pitch="67" start="8250" end="8265" volume="127"/>
-  <note pitch="55" start="8280" end="8400" volume="100"/>
-  <note pitch="48" start="8280" end="8284" volume="127"/>
-  <note pitch="60" start="8280" end="8295" volume="127"/>
-  <note pitch="60" start="8310" end="8325" volume="127"/>
-  <note pitch="60" start="8340" end="8355" volume="127"/>
-  <note pitch="60" start="8370" end="8385" volume="127"/>
-  <note pitch="48" start="8400" end="8404" volume="127"/>
-  <note pitch="60" start="8400" end="8415" volume="127"/>
-  <note pitch="60" start="8430" end="8445" volume="127"/>
-  <note pitch="60" start="8460" end="8475" volume="127"/>
-  <note pitch="60" start="8490" end="8505" volume="127"/>
-  <note pitch="48" start="8520" end="8524" volume="127"/>
-  <note pitch="59" start="8520" end="8535" volume="127"/>
-  <note pitch="59" start="8550" end="8565" volume="127"/>
-  <note pitch="59" start="8580" end="8595" volume="127"/>
-  <note pitch="59" start="8610" end="8625" volume="127"/>
-  <note pitch="48" start="8640" end="8644" volume="127"/>
-  <note pitch="67" start="8640" end="8655" volume="127"/>
-  <note pitch="67" start="8670" end="8685" volume="127"/>
-  <note pitch="67" start="8700" end="8715" volume="127"/>
-  <note pitch="67" start="8730" end="8745" volume="127"/>
-  <note pitch="55" start="8760" end="8880" volume="100"/>
-  <note pitch="48" start="8760" end="8764" volume="127"/>
-  <note pitch="60" start="8760" end="8775" volume="127"/>
-  <note pitch="60" start="8790" end="8805" volume="127"/>
-  <note pitch="60" start="8820" end="8835" volume="127"/>
-  <note pitch="60" start="8850" end="8865" volume="127"/>
-  <note pitch="48" start="8880" end="8884" volume="127"/>
-  <note pitch="60" start="8880" end="8895" volume="127"/>
-  <note pitch="60" start="8910" end="8925" volume="127"/>
-  <note pitch="60" start="8940" end="8955" volume="127"/>
-  <note pitch="60" start="8970" end="8985" volume="127"/>
-  <note pitch="48" start="9000" end="9004" volume="127"/>
-  <note pitch="59" start="9000" end="9015" volume="127"/>
-  <note pitch="59" start="9030" end="9045" volume="127"/>
-  <note pitch="59" start="9060" end="9075" volume="127"/>
-  <note pitch="59" start="9090" end="9105" volume="127"/>
-  <note pitch="50" start="9120" end="9600" volume="127"/>
-  <note pitch="67" start="9120" end="9135" volume="127"/>
-  <note pitch="48" start="9120" end="9124" volume="127"/>
-  <note pitch="67" start="9150" end="9165" volume="127"/>
-  <note pitch="67" start="9180" end="9195" volume="127"/>
-  <note pitch="67" start="9210" end="9225" volume="127"/>
-  <note pitch="55" start="9240" end="9360" volume="100"/>
-  <note pitch="48" start="9240" end="9244" volume="127"/>
-  <note pitch="60" start="9240" end="9255" volume="127"/>
-  <note pitch="60" start="9270" end="9285" volume="127"/>
-  <note pitch="60" start="9300" end="9315" volume="127"/>
-  <note pitch="60" start="9330" end="9345" volume="127"/>
-  <note pitch="48" start="9360" end="9364" volume="127"/>
-  <note pitch="59" start="9360" end="9375" volume="127"/>
-  <note pitch="59" start="9390" end="9405" volume="127"/>
-  <note pitch="59" start="9420" end="9435" volume="127"/>
-  <note pitch="59" start="9450" end="9465" volume="127"/>
-  <note pitch="48" start="9480" end="9484" volume="127"/>
-  <note pitch="55" start="9480" end="9495" volume="127"/>
-  <note pitch="55" start="9510" end="9525" volume="127"/>
-  <note pitch="55" start="9540" end="9555" volume="127"/>
-  <note pitch="55" start="9570" end="9585" volume="127"/>
-  <note pitch="48" start="9600" end="10080" volume="127"/>
-  <note pitch="66" start="9600" end="9615" volume="127"/>
-  <note pitch="48" start="9600" end="9604" volume="127"/>
-  <note pitch="66" start="9630" end="9645" volume="127"/>
-  <note pitch="66" start="9660" end="9675" volume="127"/>
-  <note pitch="66" start="9690" end="9705" volume="127"/>
-  <note pitch="55" start="9720" end="9840" volume="100"/>
-  <note pitch="48" start="9720" end="9724" volume="127"/>
-  <note pitch="59" start="9720" end="9735" volume="127"/>
-  <note pitch="59" start="9750" end="9765" volume="127"/>
-  <note pitch="59" start="9780" end="9795" volume="127"/>
-  <note pitch="59" start="9810" end="9825" volume="127"/>
-  <note pitch="48" start="9840" end="9844" volume="127"/>
-  <note pitch="55" start="9840" end="9855" volume="127"/>
-  <note pitch="55" start="9870" end="9885" volume="127"/>
-  <note pitch="55" start="9900" end="9915" volume="127"/>
-  <note pitch="55" start="9930" end="9945" volume="127"/>
-  <note pitch="48" start="9960" end="9964" volume="127"/>
-  <note pitch="54" start="9960" end="9975" volume="127"/>
-  <note pitch="54" start="9990" end="10005" volume="127"/>
-  <note pitch="54" start="10020" end="10035" volume="127"/>
-  <note pitch="54" start="10050" end="10065" volume="127"/>
-  <note pitch="55" start="10080" end="11040" volume="127"/>
-  <note pitch="67" start="10080" end="10095" volume="127"/>
-  <note pitch="48" start="10080" end="10084" volume="127"/>
-  <note pitch="67" start="10110" end="10125" volume="127"/>
-  <note pitch="67" start="10140" end="10155" volume="127"/>
-  <note pitch="67" start="10170" end="10185" volume="127"/>
-  <note pitch="55" start="10200" end="10320" volume="100"/>
-  <note pitch="48" start="10200" end="10204" volume="127"/>
-  <note pitch="60" start="10200" end="10215" volume="127"/>
-  <note pitch="60" start="10230" end="10245" volume="127"/>
-  <note pitch="60" start="10260" end="10275" volume="127"/>
-  <note pitch="60" start="10290" end="10305" volume="127"/>
-  <note pitch="48" start="10320" end="10324" volume="127"/>
-  <note pitch="60" start="10320" end="10335" volume="127"/>
-  <note pitch="60" start="10350" end="10365" volume="127"/>
-  <note pitch="60" start="10380" end="10395" volume="127"/>
-  <note pitch="60" start="10410" end="10425" volume="127"/>
-  <note pitch="48" start="10440" end="10444" volume="127"/>
-  <note pitch="59" start="10440" end="10455" volume="127"/>
-  <note pitch="59" start="10470" end="10485" volume="127"/>
-  <note pitch="59" start="10500" end="10515" volume="127"/>
-  <note pitch="59" start="10530" end="10545" volume="127"/>
-  <note pitch="48" start="10560" end="10564" volume="127"/>
-  <note pitch="67" start="10560" end="10575" volume="127"/>
-  <note pitch="67" start="10590" end="10605" volume="127"/>
-  <note pitch="67" start="10620" end="10635" volume="127"/>
-  <note pitch="67" start="10650" end="10665" volume="127"/>
-  <note pitch="55" start="10680" end="10800" volume="100"/>
-  <note pitch="48" start="10680" end="10684" volume="127"/>
-  <note pitch="60" start="10680" end="10695" volume="127"/>
-  <note pitch="60" start="10710" end="10725" volume="127"/>
-  <note pitch="60" start="10740" end="10755" volume="127"/>
-  <note pitch="60" start="10770" end="10785" volume="127"/>
-  <note pitch="48" start="10800" end="10804" volume="127"/>
-  <note pitch="60" start="10800" end="10815" volume="127"/>
-  <note pitch="60" start="10830" end="10845" volume="127"/>
-  <note pitch="60" start="10860" end="10875" volume="127"/>
-  <note pitch="60" start="10890" end="10905" volume="127"/>
-  <note pitch="48" start="10920" end="10924" volume="127"/>
-  <note pitch="59" start="10920" end="10935" volume="127"/>
-  <note pitch="59" start="10950" end="10965" volume="127"/>
-  <note pitch="59" start="10980" end="10995" volume="127"/>
-  <note pitch="59" start="11010" end="11025" volume="127"/>
-  <note pitch="54" start="11040" end="12000" volume="127"/>
-  <note pitch="67" start="11040" end="11055" volume="127"/>
-  <note pitch="48" start="11040" end="11044" volume="127"/>
-  <note pitch="67" start="11070" end="11085" volume="127"/>
-  <note pitch="67" start="11100" end="11115" volume="127"/>
-  <note pitch="67" start="11130" end="11145" volume="127"/>
-  <note pitch="55" start="11160" end="11280" volume="100"/>
-  <note pitch="48" start="11160" end="11164" volume="127"/>
-  <note pitch="60" start="11160" end="11175" volume="127"/>
-  <note pitch="60" start="11190" end="11205" volume="127"/>
-  <note pitch="60" start="11220" end="11235" volume="127"/>
-  <note pitch="60" start="11250" end="11265" volume="127"/>
-  <note pitch="48" start="11280" end="11284" volume="127"/>
-  <note pitch="60" start="11280" end="11295" volume="127"/>
-  <note pitch="60" start="11310" end="11325" volume="127"/>
-  <note pitch="60" start="11340" end="11355" volume="127"/>
-  <note pitch="60" start="11370" end="11385" volume="127"/>
-  <note pitch="48" start="11400" end="11404" volume="127"/>
-  <note pitch="59" start="11400" end="11415" volume="127"/>
-  <note pitch="59" start="11430" end="11445" volume="127"/>
-  <note pitch="59" start="11460" end="11475" volume="127"/>
-  <note pitch="59" start="11490" end="11505" volume="127"/>
-  <note pitch="48" start="11520" end="11524" volume="127"/>
-  <note pitch="67" start="11520" end="11535" volume="127"/>
-  <note pitch="67" start="11550" end="11565" volume="127"/>
-  <note pitch="67" start="11580" end="11595" volume="127"/>
-  <note pitch="67" start="11610" end="11625" volume="127"/>
-  <note pitch="55" start="11640" end="11760" volume="100"/>
-  <note pitch="48" start="11640" end="11644" volume="127"/>
-  <note pitch="60" start="11640" end="11655" volume="127"/>
-  <note pitch="60" start="11670" end="11685" volume="127"/>
-  <note pitch="60" start="11700" end="11715" volume="127"/>
-  <note pitch="60" start="11730" end="11745" volume="127"/>
-  <note pitch="48" start="11760" end="11764" volume="127"/>
-  <note pitch="60" start="11760" end="11775" volume="127"/>
-  <note pitch="60" start="11790" end="11805" volume="127"/>
-  <note pitch="60" start="11820" end="11835" volume="127"/>
-  <note pitch="60" start="11850" end="11865" volume="127"/>
-  <note pitch="48" start="11880" end="11884" volume="127"/>
-  <note pitch="59" start="11880" end="11895" volume="127"/>
-  <note pitch="59" start="11910" end="11925" volume="127"/>
-  <note pitch="59" start="11940" end="11955" volume="127"/>
-  <note pitch="59" start="11970" end="11985" volume="127"/>
-  <note pitch="55" start="12000" end="12960" volume="127"/>
-  <note pitch="67" start="12000" end="12015" volume="127"/>
-  <note pitch="48" start="12000" end="12004" volume="127"/>
-  <note pitch="67" start="12030" end="12045" volume="127"/>
-  <note pitch="67" start="12060" end="12075" volume="127"/>
-  <note pitch="67" start="12090" end="12105" volume="127"/>
-  <note pitch="55" start="12120" end="12240" volume="100"/>
-  <note pitch="48" start="12120" end="12124" volume="127"/>
-  <note pitch="60" start="12120" end="12135" volume="127"/>
-  <note pitch="60" start="12150" end="12165" volume="127"/>
-  <note pitch="60" start="12180" end="12195" volume="127"/>
-  <note pitch="60" start="12210" end="12225" volume="127"/>
-  <note pitch="48" start="12240" end="12244" volume="127"/>
-  <note pitch="60" start="12240" end="12255" volume="127"/>
-  <note pitch="60" start="12270" end="12285" volume="127"/>
-  <note pitch="60" start="12300" end="12315" volume="127"/>
-  <note pitch="60" start="12330" end="12345" volume="127"/>
-  <note pitch="48" start="12360" end="12364" volume="127"/>
-  <note pitch="59" start="12360" end="12375" volume="127"/>
-  <note pitch="59" start="12390" end="12405" volume="127"/>
-  <note pitch="59" start="12420" end="12435" volume="127"/>
-  <note pitch="59" start="12450" end="12465" volume="127"/>
-  <note pitch="48" start="12480" end="12484" volume="127"/>
-  <note pitch="67" start="12480" end="12495" volume="127"/>
-  <note pitch="67" start="12510" end="12525" volume="127"/>
-  <note pitch="67" start="12540" end="12555" volume="127"/>
-  <note pitch="67" start="12570" end="12585" volume="127"/>
-  <note pitch="55" start="12600" end="12720" volume="100"/>
-  <note pitch="48" start="12600" end="12604" volume="127"/>
-  <note pitch="60" start="12600" end="12615" volume="127"/>
-  <note pitch="60" start="12630" end="12645" volume="127"/>
-  <note pitch="60" start="12660" end="12675" volume="127"/>
-  <note pitch="60" start="12690" end="12705" volume="127"/>
-  <note pitch="48" start="12720" end="12724" volume="127"/>
-  <note pitch="60" start="12720" end="12735" volume="127"/>
-  <note pitch="60" start="12750" end="12765" volume="127"/>
-  <note pitch="60" start="12780" end="12795" volume="127"/>
-  <note pitch="60" start="12810" end="12825" volume="127"/>
-  <note pitch="48" start="12840" end="12844" volume="127"/>
-  <note pitch="59" start="12840" end="12855" volume="127"/>
-  <note pitch="59" start="12870" end="12885" volume="127"/>
-  <note pitch="59" start="12900" end="12915" volume="127"/>
-  <note pitch="59" start="12930" end="12945" volume="127"/>
-  <note pitch="54" start="12960" end="13920" volume="127"/>
-  <note pitch="67" start="12960" end="12975" volume="127"/>
-  <note pitch="48" start="12960" end="12964" volume="127"/>
-  <note pitch="67" start="12990" end="13005" volume="127"/>
-  <note pitch="67" start="13020" end="13035" volume="127"/>
-  <note pitch="67" start="13050" end="13065" volume="127"/>
-  <note pitch="55" start="13080" end="13200" volume="100"/>
-  <note pitch="48" start="13080" end="13084" volume="127"/>
-  <note pitch="60" start="13080" end="13095" volume="127"/>
-  <note pitch="60" start="13110" end="13125" volume="127"/>
-  <note pitch="60" start="13140" end="13155" volume="127"/>
-  <note pitch="60" start="13170" end="13185" volume="127"/>
-  <note pitch="48" start="13200" end="13204" volume="127"/>
-  <note pitch="60" start="13200" end="13215" volume="127"/>
-  <note pitch="60" start="13230" end="13245" volume="127"/>
-  <note pitch="60" start="13260" end="13275" volume="127"/>
-  <note pitch="60" start="13290" end="13305" volume="127"/>
-  <note pitch="48" start="13320" end="13324" volume="127"/>
-  <note pitch="59" start="13320" end="13335" volume="127"/>
-  <note pitch="59" start="13350" end="13365" volume="127"/>
-  <note pitch="59" start="13380" end="13395" volume="127"/>
-  <note pitch="59" start="13410" end="13425" volume="127"/>
-  <note pitch="48" start="13440" end="13444" volume="127"/>
-  <note pitch="67" start="13440" end="13455" volume="127"/>
-  <note pitch="67" start="13470" end="13485" volume="127"/>
-  <note pitch="67" start="13500" end="13515" volume="127"/>
-  <note pitch="67" start="13530" end="13545" volume="127"/>
-  <note pitch="60" start="13560" end="13575" volume="127"/>
-  <note pitch="55" start="13560" end="13680" volume="100"/>
-  <note pitch="48" start="13560" end="13564" volume="127"/>
-  <note pitch="60" start="13590" end="13605" volume="127"/>
-  <note pitch="60" start="13620" end="13635" volume="127"/>
-  <note pitch="60" start="13650" end="13665" volume="127"/>
-  <note pitch="48" start="13680" end="13684" volume="127"/>
-  <note pitch="60" start="13680" end="13695" volume="127"/>
-  <note pitch="60" start="13710" end="13725" volume="127"/>
-  <note pitch="60" start="13740" end="13755" volume="127"/>
-  <note pitch="60" start="13770" end="13785" volume="127"/>
-  <note pitch="48" start="13800" end="13804" volume="127"/>
-  <note pitch="59" start="13800" end="13815" volume="127"/>
-  <note pitch="59" start="13830" end="13845" volume="127"/>
-  <note pitch="59" start="13860" end="13875" volume="127"/>
-  <note pitch="59" start="13890" end="13905" volume="127"/>
-  <note pitch="48" start="13920" end="13924" volume="127"/>
-  <note pitch="50" start="13920" end="14400" volume="127"/>
-  <note pitch="67" start="13920" end="13935" volume="127"/>
-  <note pitch="67" start="13950" end="13965" volume="127"/>
-  <note pitch="67" start="13980" end="13995" volume="127"/>
-  <note pitch="67" start="14010" end="14025" volume="127"/>
-  <note pitch="60" start="14040" end="14055" volume="127"/>
-  <note pitch="55" start="14040" end="14160" volume="100"/>
-  <note pitch="48" start="14040" end="14044" volume="127"/>
-  <note pitch="60" start="14070" end="14085" volume="127"/>
-  <note pitch="60" start="14100" end="14115" volume="127"/>
-  <note pitch="60" start="14130" end="14145" volume="127"/>
-  <note pitch="48" start="14160" end="14164" volume="127"/>
-  <note pitch="59" start="14160" end="14175" volume="127"/>
-  <note pitch="59" start="14190" end="14205" volume="127"/>
-  <note pitch="59" start="14220" end="14235" volume="127"/>
-  <note pitch="59" start="14250" end="14265" volume="127"/>
-  <note pitch="48" start="14280" end="14284" volume="127"/>
-  <note pitch="55" start="14280" end="14295" volume="127"/>
-  <note pitch="55" start="14310" end="14325" volume="127"/>
-  <note pitch="55" start="14340" end="14355" volume="127"/>
-  <note pitch="55" start="14370" end="14385" volume="127"/>
-  <note pitch="48" start="14400" end="14404" volume="127"/>
-  <note pitch="48" start="14400" end="14880" volume="127"/>
-  <note pitch="66" start="14400" end="14415" volume="127"/>
-  <note pitch="66" start="14430" end="14445" volume="127"/>
-  <note pitch="66" start="14460" end="14475" volume="127"/>
-  <note pitch="66" start="14490" end="14505" volume="127"/>
-  <note pitch="59" start="14520" end="14535" volume="127"/>
-  <note pitch="55" start="14520" end="14640" volume="100"/>
-  <note pitch="48" start="14520" end="14524" volume="127"/>
-  <note pitch="59" start="14550" end="14565" volume="127"/>
-  <note pitch="59" start="14580" end="14595" volume="127"/>
-  <note pitch="59" start="14610" end="14625" volume="127"/>
-  <note pitch="48" start="14640" end="14644" volume="127"/>
-  <note pitch="55" start="14640" end="14655" volume="127"/>
-  <note pitch="55" start="14670" end="14685" volume="127"/>
-  <note pitch="55" start="14700" end="14715" volume="127"/>
-  <note pitch="55" start="14730" end="14745" volume="127"/>
-  <note pitch="48" start="14760" end="14764" volume="127"/>
-  <note pitch="54" start="14760" end="14775" volume="127"/>
-  <note pitch="54" start="14790" end="14805" volume="127"/>
-  <note pitch="54" start="14820" end="14835" volume="127"/>
-  <note pitch="54" start="14850" end="14865" volume="127"/>
-  <note pitch="48" start="14880" end="14884" volume="127"/>
-  <note pitch="55" start="14880" end="15840" volume="127"/>
-  <note pitch="67" start="14880" end="14895" volume="127"/>
-  <note pitch="67" start="14910" end="14925" volume="127"/>
-  <note pitch="67" start="14940" end="14955" volume="127"/>
-  <note pitch="67" start="14970" end="14985" volume="127"/>
-  <note pitch="60" start="15000" end="15015" volume="127"/>
-  <note pitch="55" start="15000" end="15120" volume="100"/>
-  <note pitch="48" start="15000" end="15004" volume="127"/>
-  <note pitch="60" start="15030" end="15045" volume="127"/>
-  <note pitch="60" start="15060" end="15075" volume="127"/>
-  <note pitch="60" start="15090" end="15105" volume="127"/>
-  <note pitch="48" start="15120" end="15124" volume="127"/>
-  <note pitch="60" start="15120" end="15135" volume="127"/>
-  <note pitch="60" start="15150" end="15165" volume="127"/>
-  <note pitch="60" start="15180" end="15195" volume="127"/>
-  <note pitch="60" start="15210" end="15225" volume="127"/>
-  <note pitch="48" start="15240" end="15244" volume="127"/>
-  <note pitch="59" start="15240" end="15255" volume="127"/>
-  <note pitch="59" start="15270" end="15285" volume="127"/>
-  <note pitch="59" start="15300" end="15315" volume="127"/>
-  <note pitch="59" start="15330" end="15345" volume="127"/>
-  <note pitch="48" start="15360" end="15364" volume="127"/>
-  <note pitch="67" start="15360" end="15375" volume="127"/>
-  <note pitch="67" start="15390" end="15405" volume="127"/>
-  <note pitch="67" start="15420" end="15435" volume="127"/>
-  <note pitch="67" start="15450" end="15465" volume="127"/>
-  <note pitch="60" start="15480" end="15495" volume="127"/>
-  <note pitch="55" start="15480" end="15600" volume="100"/>
-  <note pitch="48" start="15480" end="15484" volume="127"/>
-  <note pitch="60" start="15510" end="15525" volume="127"/>
-  <note pitch="60" start="15540" end="15555" volume="127"/>
-  <note pitch="60" start="15570" end="15585" volume="127"/>
-  <note pitch="48" start="15600" end="15604" volume="127"/>
-  <note pitch="60" start="15600" end="15615" volume="127"/>
-  <note pitch="60" start="15630" end="15645" volume="127"/>
-  <note pitch="60" start="15660" end="15675" volume="127"/>
-  <note pitch="60" start="15690" end="15705" volume="127"/>
-  <note pitch="48" start="15720" end="15724" volume="127"/>
-  <note pitch="59" start="15720" end="15735" volume="127"/>
-  <note pitch="59" start="15750" end="15765" volume="127"/>
-  <note pitch="59" start="15780" end="15795" volume="127"/>
-  <note pitch="59" start="15810" end="15825" volume="127"/>
-  <note pitch="48" start="15840" end="15844" volume="127"/>
-  <note pitch="54" start="15840" end="16800" volume="127"/>
-  <note pitch="67" start="15840" end="15855" volume="127"/>
-  <note pitch="67" start="15870" end="15885" volume="127"/>
-  <note pitch="67" start="15900" end="15915" volume="127"/>
-  <note pitch="67" start="15930" end="15945" volume="127"/>
-  <note pitch="60" start="15960" end="15975" volume="127"/>
-  <note pitch="55" start="15960" end="16080" volume="100"/>
-  <note pitch="48" start="15960" end="15964" volume="127"/>
-  <note pitch="60" start="15990" end="16005" volume="127"/>
-  <note pitch="60" start="16020" end="16035" volume="127"/>
-  <note pitch="60" start="16050" end="16065" volume="127"/>
-  <note pitch="48" start="16080" end="16084" volume="127"/>
-  <note pitch="60" start="16080" end="16095" volume="127"/>
-  <note pitch="60" start="16110" end="16125" volume="127"/>
-  <note pitch="60" start="16140" end="16155" volume="127"/>
-  <note pitch="60" start="16170" end="16185" volume="127"/>
-  <note pitch="48" start="16200" end="16204" volume="127"/>
-  <note pitch="59" start="16200" end="16215" volume="127"/>
-  <note pitch="59" start="16230" end="16245" volume="127"/>
-  <note pitch="59" start="16260" end="16275" volume="127"/>
-  <note pitch="59" start="16290" end="16305" volume="127"/>
-  <note pitch="48" start="16320" end="16324" volume="127"/>
-  <note pitch="67" start="16320" end="16335" volume="127"/>
-  <note pitch="67" start="16350" end="16365" volume="127"/>
-  <note pitch="67" start="16380" end="16395" volume="127"/>
-  <note pitch="67" start="16410" end="16425" volume="127"/>
-  <note pitch="60" start="16440" end="16455" volume="127"/>
-  <note pitch="55" start="16440" end="16560" volume="100"/>
-  <note pitch="48" start="16440" end="16444" volume="127"/>
-  <note pitch="60" start="16470" end="16485" volume="127"/>
-  <note pitch="60" start="16500" end="16515" volume="127"/>
-  <note pitch="60" start="16530" end="16545" volume="127"/>
-  <note pitch="48" start="16560" end="16564" volume="127"/>
-  <note pitch="60" start="16560" end="16575" volume="127"/>
-  <note pitch="60" start="16590" end="16605" volume="127"/>
-  <note pitch="60" start="16620" end="16635" volume="127"/>
-  <note pitch="60" start="16650" end="16665" volume="127"/>
-  <note pitch="48" start="16680" end="16684" volume="127"/>
-  <note pitch="59" start="16680" end="16695" volume="127"/>
-  <note pitch="59" start="16710" end="16725" volume="127"/>
-  <note pitch="59" start="16740" end="16755" volume="127"/>
-  <note pitch="59" start="16770" end="16785" volume="127"/>
-  <note pitch="48" start="16800" end="16804" volume="127"/>
-  <note pitch="55" start="16800" end="17760" volume="127"/>
-  <note pitch="67" start="16800" end="16815" volume="127"/>
-  <note pitch="67" start="16830" end="16845" volume="127"/>
-  <note pitch="67" start="16860" end="16875" volume="127"/>
-  <note pitch="67" start="16890" end="16905" volume="127"/>
-  <note pitch="60" start="16920" end="16935" volume="127"/>
-  <note pitch="55" start="16920" end="17040" volume="100"/>
-  <note pitch="48" start="16920" end="16924" volume="127"/>
-  <note pitch="60" start="16950" end="16965" volume="127"/>
-  <note pitch="60" start="16980" end="16995" volume="127"/>
-  <note pitch="60" start="17010" end="17025" volume="127"/>
-  <note pitch="48" start="17040" end="17044" volume="127"/>
-  <note pitch="60" start="17040" end="17055" volume="127"/>
-  <note pitch="60" start="17070" end="17085" volume="127"/>
-  <note pitch="60" start="17100" end="17115" volume="127"/>
-  <note pitch="60" start="17130" end="17145" volume="127"/>
-  <note pitch="48" start="17160" end="17164" volume="127"/>
-  <note pitch="59" start="17160" end="17175" volume="127"/>
-  <note pitch="59" start="17190" end="17205" volume="127"/>
-  <note pitch="59" start="17220" end="17235" volume="127"/>
-  <note pitch="59" start="17250" end="17265" volume="127"/>
-  <note pitch="48" start="17280" end="17284" volume="127"/>
-  <note pitch="67" start="17280" end="17295" volume="127"/>
-  <note pitch="67" start="17310" end="17325" volume="127"/>
-  <note pitch="67" start="17340" end="17355" volume="127"/>
-  <note pitch="67" start="17370" end="17385" volume="127"/>
-  <note pitch="60" start="17400" end="17415" volume="127"/>
-  <note pitch="55" start="17400" end="17520" volume="100"/>
-  <note pitch="48" start="17400" end="17404" volume="127"/>
-  <note pitch="60" start="17430" end="17445" volume="127"/>
-  <note pitch="60" start="17460" end="17475" volume="127"/>
-  <note pitch="60" start="17490" end="17505" volume="127"/>
-  <note pitch="48" start="17520" end="17524" volume="127"/>
-  <note pitch="60" start="17520" end="17535" volume="127"/>
-  <note pitch="60" start="17550" end="17565" volume="127"/>
-  <note pitch="60" start="17580" end="17595" volume="127"/>
-  <note pitch="60" start="17610" end="17625" volume="127"/>
-  <note pitch="48" start="17640" end="17644" volume="127"/>
-  <note pitch="59" start="17640" end="17655" volume="127"/>
-  <note pitch="59" start="17670" end="17685" volume="127"/>
-  <note pitch="59" start="17700" end="17715" volume="127"/>
-  <note pitch="59" start="17730" end="17745" volume="127"/>
-  <note pitch="48" start="17760" end="17764" volume="127"/>
-  <note pitch="54" start="17760" end="18720" volume="127"/>
-  <note pitch="67" start="17760" end="17775" volume="127"/>
-  <note pitch="67" start="17790" end="17805" volume="127"/>
-  <note pitch="67" start="17820" end="17835" volume="127"/>
-  <note pitch="67" start="17850" end="17865" volume="127"/>
-  <note pitch="60" start="17880" end="17895" volume="127"/>
-  <note pitch="55" start="17880" end="18000" volume="100"/>
-  <note pitch="48" start="17880" end="17884" volume="127"/>
-  <note pitch="60" start="17910" end="17925" volume="127"/>
-  <note pitch="60" start="17940" end="17955" volume="127"/>
-  <note pitch="60" start="17970" end="17985" volume="127"/>
-  <note pitch="48" start="18000" end="18004" volume="127"/>
-  <note pitch="60" start="18000" end="18015" volume="127"/>
-  <note pitch="60" start="18030" end="18045" volume="127"/>
-  <note pitch="60" start="18060" end="18075" volume="127"/>
-  <note pitch="60" start="18090" end="18105" volume="127"/>
-  <note pitch="48" start="18120" end="18124" volume="127"/>
-  <note pitch="59" start="18120" end="18135" volume="127"/>
-  <note pitch="59" start="18150" end="18165" volume="127"/>
-  <note pitch="59" start="18180" end="18195" volume="127"/>
-  <note pitch="59" start="18210" end="18225" volume="127"/>
-  <note pitch="48" start="18240" end="18244" volume="127"/>
-  <note pitch="67" start="18240" end="18255" volume="127"/>
-  <note pitch="67" start="18270" end="18285" volume="127"/>
-  <note pitch="67" start="18300" end="18315" volume="127"/>
-  <note pitch="67" start="18330" end="18345" volume="127"/>
-  <note pitch="60" start="18360" end="18375" volume="127"/>
-  <note pitch="55" start="18360" end="18480" volume="100"/>
-  <note pitch="48" start="18360" end="18364" volume="127"/>
-  <note pitch="60" start="18390" end="18405" volume="127"/>
-  <note pitch="60" start="18420" end="18435" volume="127"/>
-  <note pitch="60" start="18450" end="18465" volume="127"/>
-  <note pitch="48" start="18480" end="18484" volume="127"/>
-  <note pitch="60" start="18480" end="18495" volume="127"/>
-  <note pitch="60" start="18510" end="18525" volume="127"/>
-  <note pitch="60" start="18540" end="18555" volume="127"/>
-  <note pitch="60" start="18570" end="18585" volume="127"/>
-  <note pitch="48" start="18600" end="18604" volume="127"/>
-  <note pitch="59" start="18600" end="18615" volume="127"/>
-  <note pitch="59" start="18630" end="18645" volume="127"/>
-  <note pitch="59" start="18660" end="18675" volume="127"/>
-  <note pitch="59" start="18690" end="18705" volume="127"/>
-  <note pitch="48" start="18720" end="18724" volume="127"/>
-  <note pitch="50" start="18720" end="19200" volume="127"/>
-  <note pitch="67" start="18720" end="18735" volume="127"/>
-  <note pitch="67" start="18750" end="18765" volume="127"/>
-  <note pitch="67" start="18780" end="18795" volume="127"/>
-  <note pitch="67" start="18810" end="18825" volume="127"/>
-  <note pitch="60" start="18840" end="18855" volume="127"/>
-  <note pitch="55" start="18840" end="18960" volume="100"/>
-  <note pitch="48" start="18840" end="18844" volume="127"/>
-  <note pitch="60" start="18870" end="18885" volume="127"/>
-  <note pitch="60" start="18900" end="18915" volume="127"/>
-  <note pitch="60" start="18930" end="18945" volume="127"/>
-  <note pitch="48" start="18960" end="18964" volume="127"/>
-  <note pitch="59" start="18960" end="18975" volume="127"/>
-  <note pitch="59" start="18990" end="19005" volume="127"/>
-  <note pitch="59" start="19020" end="19035" volume="127"/>
-  <note pitch="59" start="19050" end="19065" volume="127"/>
-  <note pitch="48" start="19080" end="19084" volume="127"/>
-  <note pitch="55" start="19080" end="19095" volume="127"/>
-  <note pitch="55" start="19110" end="19125" volume="127"/>
-  <note pitch="55" start="19140" end="19155" volume="127"/>
-  <note pitch="55" start="19170" end="19185" volume="127"/>
-  <note pitch="48" start="19200" end="19204" volume="127"/>
-  <note pitch="48" start="19200" end="19680" volume="127"/>
-  <note pitch="66" start="19200" end="19215" volume="127"/>
-  <note pitch="66" start="19230" end="19245" volume="127"/>
-  <note pitch="66" start="19260" end="19275" volume="127"/>
-  <note pitch="66" start="19290" end="19305" volume="127"/>
-  <note pitch="59" start="19320" end="19335" volume="127"/>
-  <note pitch="55" start="19320" end="19440" volume="100"/>
-  <note pitch="48" start="19320" end="19324" volume="127"/>
-  <note pitch="59" start="19350" end="19365" volume="127"/>
-  <note pitch="59" start="19380" end="19395" volume="127"/>
-  <note pitch="59" start="19410" end="19425" volume="127"/>
-  <note pitch="48" start="19440" end="19444" volume="127"/>
-  <note pitch="55" start="19440" end="19455" volume="127"/>
-  <note pitch="55" start="19470" end="19485" volume="127"/>
-  <note pitch="55" start="19500" end="19515" volume="127"/>
-  <note pitch="55" start="19530" end="19545" volume="127"/>
-  <note pitch="48" start="19560" end="19564" volume="127"/>
-  <note pitch="54" start="19560" end="19575" volume="127"/>
-  <note pitch="54" start="19590" end="19605" volume="127"/>
-  <note pitch="54" start="19620" end="19635" volume="127"/>
-  <note pitch="54" start="19650" end="19665" volume="127"/>
-  <controlevent type="203" tick="0" value="6.00000000"/>
-  <controlevent type="7" tick="0" value="0.00000000"/>
-  <controlevent type="10" tick="0" value="63.00000000"/>
-  <controlevent type="203" tick="0" value="0.00000000"/>
-  <controlevent type="7" tick="0" value="0.00000000"/>
-  <controlevent type="10" tick="0" value="63.00000000"/>
-  <controlevent type="203" tick="0" value="55.00000000"/>
-  <controlevent type="7" tick="0" value="15.00000000"/>
-  <controlevent type="10" tick="0" value="63.00000000"/>
-  <controlevent type="203" tick="0" value="16.00000000"/>
-  <controlevent type="7" tick="0" value="0.00000000"/>
+  <note pitch="54" start="4710" end="4725" volume="127"/>
+  <note pitch="54" start="4740" end="4755" volume="127"/>
+  <note pitch="54" start="4770" end="4785" volume="127"/>
   <controlevent type="10" tick="0" value="63.00000000"/>
   <controlevent type="7" tick="0" value="63.00000000"/>
-  <controlevent type="10" tick="0" value="63.00000000"/>
+  <controlevent type="203" tick="0" value="6.00000000"/>
 </track>
 
 </sequence></seqview>
